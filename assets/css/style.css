@@ -122,3 +122,9 @@ i {
     height: 30rem;
     border: solid 2px greenyellow;
 }
+
+.square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 35%;
+}
