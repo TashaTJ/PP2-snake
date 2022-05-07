@@ -100,7 +100,11 @@ i {
 
 #game-screen {
     height: 100vh;
-    display: block; /* this need to change to none when js gets started*/
+    /* this need to change to 'none' when js gets started*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .game-area {
@@ -118,5 +122,3 @@ i {
     height: 30rem;
     border: solid 2px greenyellow;
 }
-
-
