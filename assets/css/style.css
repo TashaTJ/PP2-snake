@@ -85,6 +85,8 @@ i {
     list-style: none;
 }
 
+/* Game Screen */
+
 .controls {
     display: none;
     justify-content: space-between;
@@ -94,6 +96,11 @@ i {
     top: 0;
     left: 0;
     right: 0;
+}
+
+#game-screen {
+    height: 100vh;
+    display: block; /* this need to change to none when js gets started*/
 }
 
 
