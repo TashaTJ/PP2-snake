@@ -74,7 +74,9 @@ function startGame() {
 }
 
 
-// this should come after all fuctions 
+
+
+// this should come after all functions 
 function displayHomeScreen() {
     gameScreen.style.display = 'none';
     homeScreen.style.display = 'flex';
