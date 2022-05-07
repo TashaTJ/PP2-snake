@@ -4,8 +4,10 @@ const gameScreen = document.getElementById('game-screen');
 
 // Navigation buttons variables.
 const startBtn = document.getElementById('start');
+const homeBtn = document.getElementsByClassName('home');
 
 startBtn.addEventListener('click', displayGameScreen);
+
 
 // Loop over home buttons class and add event listener.
 for (let home of homeBtn) {
@@ -75,6 +77,6 @@ function startGame() {
 // this should come after all fuctions 
 function displayHomeScreen() {
     gameScreen.style.display = 'none';
-    homeScreen.style.display = 'none';
+    homeScreen.style.display = 'flex';
     document.getElementsByClassName('controls')[0].style.disply = 'none';
 }
