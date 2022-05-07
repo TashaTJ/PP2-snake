@@ -132,4 +132,5 @@ i {
 .snake {
     background-color: green;
     background-size: cover;
+    background-image: url(/assets/images/snakeskin.png);
 }
