@@ -7,6 +7,11 @@ const startBtn = document.getElementById('start');
 
 startBtn.addEventListener('click', displayGameScreen);
 
+// Loop over home buttons class and add event listener.
+for (let home of homeBtn) {
+    home.addEventListener('click', displayHomeScreen);
+}
+
 // Screen display functions
 function displayGameScreen() {
     homeScreen.style.display = 'none';
