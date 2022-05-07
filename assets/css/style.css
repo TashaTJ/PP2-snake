@@ -128,3 +128,8 @@ i {
     height: 3rem;
     border-radius: 35%;
 }
+
+.snake {
+    background-color: green;
+    background-size: cover;
+}
