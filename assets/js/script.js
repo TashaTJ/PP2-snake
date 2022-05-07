@@ -75,4 +75,5 @@ function startGame() {
 function displayHomeScreen() {
     gameScreen.style.display = 'none';
     homeScreen.style.display = 'none';
+    document.getElementsByClassName('controls')[0].style.disply = 'none';
 }
