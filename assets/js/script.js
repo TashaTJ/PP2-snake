@@ -1,6 +1,9 @@
 // Game Screen variables 
 const gameScreen = document.getElementById('game-screen');
 
+// Navigation buttons variables.
+const startBtn = document.getElementById('start');
+
 // Game variables 
 const grid = document.querySelector(".grid");
 /* const startButton = document.getElementById("start"); */
@@ -50,3 +53,4 @@ function startGame() {
     currentSnake.forEach((index) => squares[index].classList.add("snake"));
     timerId = setInterval(move, intervalTime);
 }
+
