@@ -69,3 +69,10 @@ function startGame() {
     currentSnake.forEach((index) => squares[index].classList.add("snake"));
     timerId = setInterval(move, intervalTime);
 }
+
+
+// this should come after all fuctions 
+function displayHomeScreen() {
+    gameScreen.style.display = 'none';
+    homeScreen.style.display = 'none';
+}
