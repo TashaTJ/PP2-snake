@@ -134,3 +134,9 @@ i {
     background-size: cover;
     background-image: url(/assets/images/snakeskin.png);
 }
+
+.apple {
+    background: var(--background);
+    background-image: url(/assets/images/apple.png);
+    background-size: cover;
+}
