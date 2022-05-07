@@ -1,8 +1,19 @@
 // Game Screen variables 
+const homeScreen = document.getElementById('home-screen');
 const gameScreen = document.getElementById('game-screen');
 
 // Navigation buttons variables.
 const startBtn = document.getElementById('start');
+
+startBtn.addEventListener('click', displayGameScreen);
+
+// Screen display functions
+function displayGameScreen() {
+    homeScreen.style.display = 'none';
+    gameScreen.style.display = 'flex';
+
+    startGame();
+}
 
 // Game variables 
 const grid = document.querySelector(".grid");
@@ -53,4 +64,3 @@ function startGame() {
     currentSnake.forEach((index) => squares[index].classList.add("snake"));
     timerId = setInterval(move, intervalTime);
 }
-
