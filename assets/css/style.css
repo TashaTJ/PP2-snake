@@ -32,6 +32,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation: fadeIn ease 1s;
 }
 
 #home-screen h1 {
@@ -39,6 +40,21 @@ h1 {
     margin-bottom: 2rem;
 }
 
+i {
+    margin-bottom: 2rem;
+    animation: fadeIn ease 2s;
+    font-size: 1rem;
+    margin: 0 10px;
+}
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 3;
+    }
+}
 
 
