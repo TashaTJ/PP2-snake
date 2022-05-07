@@ -57,4 +57,12 @@ i {
     }
 }
 
+.btn {
+    padding: 1rem 6rem;
+    font-family: 'Press Start 2P', lato;
+    color: var(--text);
+    background-color: var(--background);
+    border: 2px solid greenyellow;
+}
+
 
