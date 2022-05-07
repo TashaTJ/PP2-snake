@@ -16,6 +16,7 @@ for (let home of homeBtn) {
 function displayGameScreen() {
     homeScreen.style.display = 'none';
     gameScreen.style.display = 'flex';
+    document.getElementsByClassName('controls')[0].style.display = 'flex';
 
     startGame();
 }
