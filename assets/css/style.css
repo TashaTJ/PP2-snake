@@ -65,4 +65,24 @@ i {
     border: 2px solid greenyellow;
 }
 
+#start:hover {
+    background-color: greenyellow;
+    color: var(--background);
+}
+
+.how-to-play h2 {
+    font-size: 2rem;
+    margin: 2rem 1rem;
+}
+
+#instructions {
+    margin-bottom: 0.5rem;
+}
+
+#instructions li {
+    padding: 0.5rem;
+    font-size: 1rem;
+    list-style: none;
+}
+
 
