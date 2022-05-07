@@ -138,4 +138,5 @@ i {
 .apple {
     background: var(--background);
     background-image: url(/assets/images/apple.png);
+    background-size: cover;
 }
