@@ -9,6 +9,7 @@ const homeBtn = document.getElementsByClassName('home');
 startBtn.addEventListener('click', displayGameScreen);
 
 
+
 // Loop over home buttons class and add event listener.
 for (let home of homeBtn) {
     home.addEventListener('click', displayHomeScreen);
@@ -136,7 +137,7 @@ function isGameOver() {
         gameOver = true;
     }
     if (gameOver) {
-        gameOverScreen.style.display = 'grid';
+        /*gameOverScreen.style.display = 'grid';*/
         gameScreen.style.display = 'none';
     }
     console.log("game over", gameOver);
@@ -150,6 +151,45 @@ function generateApple() {
     squares[appleIndex].classList.add("apple");
 }
 generateApple();
+
+
+function control(e) {
+    if (e.keyCode === 39) {
+      console.log("right pressed");
+      direction = 1;
+      rightSound.play();
+    } else if (e.keyCode === 38) {
+      console.log("up pressed");
+      direction = -width;
+      upSound.play()
+    } else if (e.keyCode === 37) {
+      console.log("left pressed");
+      direction = -1;
+      leftSound.play();
+    } else if (e.keyCode === 40) {
+      console.log("down pressed");
+      downSound.play();
+      direction = +width;
+    }
+  }
+
+  document.addEventListener("keyup", control);
+  /* startBtn.addEventListener('click', displayGameScreen);*/
+  /* startGame(); */
+ 
+  window.addEventListener(
+    "keydown",
+    function (e) {
+      if (
+        ["Space", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(
+          e.code
+        ) > -1
+      ) {
+        e.preventDefault();
+      }
+    },
+    false
+  );
 
 
 
