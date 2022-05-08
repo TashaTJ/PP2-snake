@@ -8,6 +8,13 @@ const homeBtn = document.getElementsByClassName('home');
 
 startBtn.addEventListener('click', displayGameScreen);
 
+ // Game audio variables.
+ let biteSound = new Audio('assets/sounds/bite-sound.mp3');
+ const leftSound = new Audio('assets/sounds/left.wav');
+ const rightSound = new Audio('assets/sounds/right.wav');
+ const upSound = new Audio('assets/sounds/up.wav');
+ const downSound = new Audio('assets/sounds/down.wav');
+
 
 
 // Loop over home buttons class and add event listener.
