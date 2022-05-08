@@ -115,16 +115,66 @@ function move() {
         timerId = setInterval(move, intervalTime);
     }
     isGameOver();
-    squares[currentSnake[0]].classList.add("snake");  
+    squares[currentSnake[0]].classList.add("snake");
 }
+
+function isGameOver() {
+    let gameOver = false;
+
+    // if(direction === 1) {
+    //   return false;
+    // }
+
+    // Walls 
+    if (currentSnake[0] + width >= width * width && direction === width) {
+        gameOver = true;
+    } else if (currentSnake[0] % width === width - 1 && direction === 1) {
+        gameOver = true;
+    } else if (currentSnake[0] % width === 0 && direction === -1) {
+        gameOver = true;
+    } else if (currentSnake[0] - width <= 0 && direction === -width) {
+        gameOver = true;
+    }
+    if (gameOver) {
+        gameOverScreen.style.display = 'grid';
+        gameScreen.style.display = 'none';
+    }
+    console.log("game over", gameOver);
+    return gameOver;
+}
+
+function isGameOver() {
+    let gameOver = false;
+ 
+    // if(direction === 1) {
+    //   return false;
+    // }
+ 
+    // Walls 
+    if (currentSnake[0] + width >= width * width && direction === width) {
+      gameOver = true;
+    } else if (currentSnake[0] % width === width - 1 && direction === 1) {
+      gameOver = true;
+    } else if (currentSnake[0] % width === 0 && direction === -1) {
+      gameOver = true;
+    } else if (currentSnake[0] - width <= 0 && direction === -width) {
+      gameOver = true;
+    }
+    if (gameOver) {
+      gameOverScreen.style.display = 'grid';
+      gameScreen.style.display = 'none';
+    }
+    console.log("game over", gameOver);
+    return gameOver;
+  }
 
 function generateApple() {
     do {
-      appleIndex = Math.floor(Math.random() * squares.length);
+        appleIndex = Math.floor(Math.random() * squares.length);
     } while (squares[appleIndex].classList.contains("snake"));
     squares[appleIndex].classList.add("apple");
-  }
-  generateApple();
+}
+generateApple();
 
 
 
