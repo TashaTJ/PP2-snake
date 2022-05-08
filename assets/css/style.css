@@ -167,3 +167,16 @@ i {
       height: 4rem;
     }
   }
+
+  @media only screen and (min-width:1024px) {
+
+    .grid {
+      width: 50rem;
+      height: 50rem;
+    }
+  
+    .square {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
