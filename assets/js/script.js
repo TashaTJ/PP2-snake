@@ -74,21 +74,33 @@ function startGame() {
 
 function move() {
     if (
-      (currentSnake[0] + width >= width * width && direction === width) || //if snake has hit bottom
-      (currentSnake[0] % width > width - 1 && direction === 1) || //if snake has hit right wall
-      (currentSnake[0] % width === 0 && direction === -1) || //if snake has hit left wall
-      (currentSnake[0] - width < 0 && direction === -width) || //if snake has hit top
-      squares[currentSnake[0] + direction].classList.contains("snake")
+        (currentSnake[0] + width >= width * width && direction === width) || //if snake has hit bottom
+        (currentSnake[0] % width > width - 1 && direction === 1) || //if snake has hit right wall
+        (currentSnake[0] % width === 0 && direction === -1) || //if snake has hit left wall
+        (currentSnake[0] - width < 0 && direction === -width) || //if snake has hit top
+        squares[currentSnake[0] + direction].classList.contains("snake")
     )
-      return clearInterval(timerId);
+        return clearInterval(timerId);
 
+    // remove the last element from our currentSnake array
+    const tail = currentSnake.pop();
+    // remove the styling from last element
+    squares[tail].classList.remove("snake");
+    // add square in direction we are heading
+    currentSnake.unshift(currentSnake[0] + direction);
+    // add styling so we can see it
 
-
-
-
-// this should come after all functions 
-function displayHomeScreen() {
-    gameScreen.style.display = 'none';
-    homeScreen.style.display = 'flex';
-    document.getElementsByClassName('controls')[0].style.disply = 'none';
 }
+
+
+
+
+
+
+
+    // this should come after all functions 
+    function displayHomeScreen() {
+        gameScreen.style.display = 'none';
+        homeScreen.style.display = 'flex';
+        document.getElementsByClassName('controls')[0].style.disply = 'none';
+    }
