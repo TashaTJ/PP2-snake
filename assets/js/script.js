@@ -90,7 +90,7 @@ function move() {
     currentSnake.unshift(currentSnake[0] + direction);
     // add styling so we can see it
 
-    //deals with if snake head gets apple
+    //deals with if snake gets apple 
     if (squares[currentSnake[0]].classList.contains("apple")) {
         //remove the class of apple
         squares[currentSnake[0]].classList.remove("apple");
@@ -115,8 +115,16 @@ function move() {
         timerId = setInterval(move, intervalTime);
     }
     isGameOver();
-    squares[currentSnake[0]].classList.add("snake");
+    squares[currentSnake[0]].classList.add("snake");  
 }
+
+function generateApple() {
+    do {
+      appleIndex = Math.floor(Math.random() * squares.length);
+    } while (squares[appleIndex].classList.contains("snake"));
+    squares[appleIndex].classList.add("apple");
+  }
+  generateApple();
 
 
 
