@@ -118,14 +118,14 @@ i {
 .grid {
     display: flex;
     flex-wrap: wrap;
-    width: 30rem;
-    height: 30rem;
+    width: 20rem;
+    height: 20rem;
     border: solid 2px greenyellow;
 }
 
 .square {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 35%;
 }
 
@@ -140,3 +140,6 @@ i {
     background-image: url(/assets/images/apple.png);
     background-size: cover;
 }
+
+/* For smaller screen sizes, from 500px upwards */
+
