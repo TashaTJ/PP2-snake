@@ -74,11 +74,11 @@ function startGame() {
 
 function move() {
     if (
-        (currentSnake[0] + width >= width * width && direction === width) || //if snake has hit bottom
-        (currentSnake[0] % width > width - 1 && direction === 1) || //if snake has hit right wall
-        (currentSnake[0] % width === 0 && direction === -1) || //if snake has hit left wall
-        (currentSnake[0] - width < 0 && direction === -width) || //if snake has hit top
-        squares[currentSnake[0] + direction].classList.contains("snake")
+      (currentSnake[0] + width >= width * width && direction === width) || //if snake has hit bottom
+      (currentSnake[0] % width > width - 1 && direction === 1) || //if snake has hit right wall
+      (currentSnake[0] % width === 0 && direction === -1) || //if snake has hit left wall
+      (currentSnake[0] - width < 0 && direction === -width) || //if snake has hit top
+      squares[currentSnake[0] + direction].classList.contains("snake")
     )
         return clearInterval(timerId);
 
@@ -142,31 +142,6 @@ function isGameOver() {
     console.log("game over", gameOver);
     return gameOver;
 }
-
-function isGameOver() {
-    let gameOver = false;
- 
-    // if(direction === 1) {
-    //   return false;
-    // }
- 
-    // Walls 
-    if (currentSnake[0] + width >= width * width && direction === width) {
-      gameOver = true;
-    } else if (currentSnake[0] % width === width - 1 && direction === 1) {
-      gameOver = true;
-    } else if (currentSnake[0] % width === 0 && direction === -1) {
-      gameOver = true;
-    } else if (currentSnake[0] - width <= 0 && direction === -width) {
-      gameOver = true;
-    }
-    if (gameOver) {
-      gameOverScreen.style.display = 'grid';
-      gameScreen.style.display = 'none';
-    }
-    console.log("game over", gameOver);
-    return gameOver;
-  }
 
 function generateApple() {
     do {
