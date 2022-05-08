@@ -153,5 +153,17 @@ i {
       width: 3rem;
       height: 3rem;
     }
+  }
+
+  @media only screen and (min-width:768px) {
+
+    .grid {
+      width: 40rem;
+      height: 40rem;
+    }
   
+    .square {
+      width: 4rem;
+      height: 4rem;
+    }
   }
