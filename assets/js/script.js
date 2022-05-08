@@ -90,6 +90,32 @@ function move() {
     currentSnake.unshift(currentSnake[0] + direction);
     // add styling so we can see it
 
+    //deals with if snake head gets apple
+    if (squares[currentSnake[0]].classList.contains("apple")) {
+        //remove the class of apple
+        squares[currentSnake[0]].classList.remove("apple");
+        biteSound.play();
+        //grow our snake by adding class of snake to it
+        squares[tail].classList.add("snake");
+        console.log(tail);
+        //grow our snake array
+        currentSnake.push(tail);
+        console.log(currentSnake);
+        //generate new apple
+        generateApple();
+        //add one to the score
+        score++;
+        //display our score
+        scoreDisplay.textContent = score;
+        //speed up our snake
+        clearInterval(timerId);
+        console.log(intervalTime);
+        intervalTime = intervalTime * speed;
+        console.log(intervalTime);
+        timerId = setInterval(move, intervalTime);
+    }
+    isGameOver();
+    squares[currentSnake[0]].classList.add("snake");
 }
 
 
@@ -98,9 +124,11 @@ function move() {
 
 
 
-    // this should come after all functions 
-    function displayHomeScreen() {
-        gameScreen.style.display = 'none';
-        homeScreen.style.display = 'flex';
-        document.getElementsByClassName('controls')[0].style.disply = 'none';
-    }
+
+
+// this should come after all functions 
+function displayHomeScreen() {
+    gameScreen.style.display = 'none';
+    homeScreen.style.display = 'flex';
+    document.getElementsByClassName('controls')[0].style.disply = 'none';
+}
