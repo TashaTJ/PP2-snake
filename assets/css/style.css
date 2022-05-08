@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Press+Start+2P&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* Reset font-size for easier rem unit calculation */
+  font-size: 10px;
 }
 
 :root {
@@ -13,8 +15,6 @@
 
 body {
     background-color: var(--background);
-    /* reset font-size for easy rem calculation */
-    font-size: 10px;
     font-family: Lato, sans-serif;
     color: var(--text);
     font-weight: 300;
@@ -77,6 +77,7 @@ i {
 
 #instructions {
     margin-bottom: 0.5rem;
+    padding: 0;
 }
 
 #instructions li {
@@ -100,15 +101,15 @@ i {
 
 #game-screen {
     height: 100vh;
-    /* this need to change to 'none' when js gets started*/
+    /* this need to change to 'none' when js gets started */
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
 }
 
-.game-area {
-    height: 100%;
+.game-container {
+    height: 100vh;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
@@ -118,14 +119,14 @@ i {
 .grid {
     display: flex;
     flex-wrap: wrap;
-    width: 20rem;
-    height: 20rem;
+    width: 30rem;
+    height: 30rem;
     border: solid 2px greenyellow;
 }
 
 .square {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 35%;
 }
 
@@ -143,7 +144,7 @@ i {
 
 /* For smaller screen sizes, from 500px upwards */
 
-@media only screen and (min-width:500px) {
+/*@media only screen and (min-width:500px) {
     .grid {
       width: 30rem;
       height: 30rem;
@@ -179,4 +180,4 @@ i {
       width: 5rem;
       height: 5rem;
     }
-  }
+  }*/
