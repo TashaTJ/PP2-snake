@@ -25,7 +25,6 @@ function displayGameScreen() {
 
 // Game variables 
 const grid = document.querySelector(".grid");
-/* const startButton = document.getElementById("start"); */
 const scoreDisplay = document.getElementById("score");
 let squares = [];
 let currentSnake = [2, 1, 0];
@@ -68,10 +67,22 @@ function startGame() {
     direction = 1;
     intervalTime = 1000;
     generateApple();
-    //readd the class of snake to our new currentSnake
+    //re add the class of snake to our new currentSnake
     currentSnake.forEach((index) => squares[index].classList.add("snake"));
     timerId = setInterval(move, intervalTime);
 }
+
+function move() {
+    if (
+      (currentSnake[0] + width >= width * width && direction === width) || //if snake has hit bottom
+      (currentSnake[0] % width > width - 1 && direction === 1) || //if snake has hit right wall
+      (currentSnake[0] % width === 0 && direction === -1) || //if snake has hit left wall
+      (currentSnake[0] - width < 0 && direction === -width) || //if snake has hit top
+      squares[currentSnake[0] + direction].classList.contains("snake")
+    )
+      return clearInterval(timerId);
+
+
 
 
 
