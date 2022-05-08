@@ -87,8 +87,10 @@ function move() {
       (currentSnake[0] % width === 0 && direction === -1) || //if snake has hit left wall
       (currentSnake[0] - width < 0 && direction === -width) || //if snake has hit top
       squares[currentSnake[0] + direction].classList.contains("snake")
-    )
+    ) {
+        gameScreen.style.display = 'none';
         return clearInterval(timerId);
+    }
 
     // remove the last element from our currentSnake array
     const tail = currentSnake.pop();
@@ -105,10 +107,8 @@ function move() {
         biteSound.play();
         //grow our snake by adding class of snake to it
         squares[tail].classList.add("snake");
-        console.log(tail);
         //grow our snake array
         currentSnake.push(tail);
-        console.log(currentSnake);
         //generate new apple
         generateApple();
         //add one to the score
@@ -117,9 +117,7 @@ function move() {
         scoreDisplay.textContent = score;
         //speed up our snake
         clearInterval(timerId);
-        console.log(intervalTime);
         intervalTime = intervalTime * speed;
-        console.log(intervalTime);
         timerId = setInterval(move, intervalTime);
     }
     isGameOver();
@@ -134,13 +132,13 @@ function isGameOver() {
     // }
 
     // Walls 
-    if (currentSnake[0] + width >= width * width && direction === width) {
+    if (currentSnake[0] >= width * width && direction === width) { // bottom
         gameOver = true;
-    } else if (currentSnake[0] % width === width - 1 && direction === 1) {
+    } else if (currentSnake[0] === width && direction === 1) { // right       
         gameOver = true;
-    } else if (currentSnake[0] % width === 0 && direction === -1) {
+    } else if (currentSnake[0] <= 0 && direction === -1) { // left
         gameOver = true;
-    } else if (currentSnake[0] - width <= 0 && direction === -width) {
+    } else if (currentSnake[0] <= 0 && direction === -width) { // top
         gameOver = true;
     }
     if (gameOver) {
