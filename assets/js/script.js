@@ -240,6 +240,26 @@ function control(e) {
   }
 }
 
+// touch controls 
+function touchControlsClicked() {
+  if (this.getAttribute("id") === "btn-left") {
+    direction = -1;
+    leftSound.play();
+  }
+  if (this.getAttribute("id") === "btn-right") {
+    direction = 1;
+    rightSound.play();
+  }
+  if (this.getAttribute("id") === "btn-up") {
+    direction = -width;
+    upSound.play();
+  }
+  if (this.getAttribute("id") === "btn-down") {
+    downSound.play();
+    direction = +width;
+  }
+}
+
 document.addEventListener("keyup", control);
 
 window.addEventListener(
