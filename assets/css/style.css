@@ -196,6 +196,13 @@ i {
     background-size: cover;
 }
 
+/* Touch controls */
+#touch-controls {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
 /* Game Over Screen */
 
 /* Inspiration from W3Schools https://www.w3schools.com/howto/howto_css_modals.asp */
