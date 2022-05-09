@@ -6,6 +6,7 @@ body {
   padding: 0;
   /* Reset font-size for easier rem unit calculation */
   font-size: 10px;
+  height: 100%; 
 }
 
 :root {
