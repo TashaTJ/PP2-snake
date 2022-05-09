@@ -36,6 +36,13 @@ function displayGameScreen() {
   startGame();
 }
 
+/* Close winner modal that is passed into the function */
+
+closeBtn.addEventListener('click', () => {
+  closeModal(gameOverScreen);
+  displayHomeScreen();
+});
+
 
 
 // Game variables 
@@ -150,7 +157,7 @@ function isGameOver() {
   }
   if (gameOver) {
     gameScreen.style.display = 'none';
-  
+
   }
   console.log("game over", gameOver);
   console.log(modalParagraph);
