@@ -3,6 +3,9 @@ const homeScreen = document.getElementById('home-screen');
 const gameScreen = document.getElementById('game-screen');
 const gameOverScreen = document.getElementById('game-over-screen');
 
+// Game Over variables 
+const modalParagraph = document.getElementById('modal-result');
+
 // Navigation buttons variables.
 const startBtn = document.getElementById('start');
 const homeBtn = document.getElementsByClassName('home');
