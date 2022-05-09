@@ -43,8 +43,6 @@ closeBtn.addEventListener('click', () => {
   displayHomeScreen();
 });
 
-
-
 // Game variables 
 const grid = document.querySelector(".grid");
 const scoreDisplay = document.getElementById("score");
@@ -140,11 +138,6 @@ function move() {
 
 function isGameOver() {
   let gameOver = false;
-
-  // if(direction === 1) {
-  //   return false;
-  // }
-
   // Walls 
   if (currentSnake[0] >= width * width && direction === width) { // bottom
     gameOver = true;
