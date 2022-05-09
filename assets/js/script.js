@@ -43,6 +43,10 @@ closeBtn.addEventListener('click', () => {
   displayHomeScreen();
 });
 
+toggleSound.addEventListener('click') {
+  
+}
+
 // Game variables 
 const grid = document.querySelector(".grid");
 const scoreDisplay = document.getElementById("score");
