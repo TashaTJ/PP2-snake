@@ -220,7 +220,7 @@ i {
 .btnControls {
     /*border-radius: 50%; */
     background-color: var(--background);
-    border: 4px solid;
+    border: 4px solid black;
     /*border-color: greenyellow;*/
     width: 4rem;
     height: 4rem;
