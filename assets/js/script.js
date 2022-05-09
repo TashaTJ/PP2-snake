@@ -71,7 +71,7 @@ toggleSound.addEventListener('click', (e) => {
 
 // Hammertime touch gestures
 // https://hammerjs.github.io/
-hammertime.on(`panleft panright panup pandown twofingertap`, (e) => {
+hammertime.on(`panleft panright panup pandown`, (e) => {
   if (e.type === `panleft`) {
     direction = -1;
     leftSound.play();
@@ -86,7 +86,6 @@ hammertime.on(`panleft panright panup pandown twofingertap`, (e) => {
     direction = +width;
   }
 });
-
 
 // Game variables 
 const grid = document.querySelector(".grid");
