@@ -9,6 +9,7 @@ const modalParagraph = document.getElementById('modal-result');
 // Navigation buttons variables.
 const startBtn = document.getElementById('start');
 const homeBtn = document.getElementsByClassName('home');
+const closeBtn = document.getElementsByClassName('close')[0];
 
 startBtn.addEventListener('click', displayGameScreen);
 
