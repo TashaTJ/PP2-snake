@@ -198,9 +198,6 @@ i {
 
 /* Touch controls */
 
-tbody {
-    display: block;
-}
 #touch-controls {
     position: relative;
     margin: 0 auto;
@@ -220,13 +217,13 @@ tbody {
 }
 
 .btnControls {
-    border-radius: 50%;
+    /*border-radius: 50%; */
     background-color: var(--background);
-    border: 4px solid;
+    /*border: 4px solid;*/
     width: 4rem;
     height: 4rem;
     font-size: 3rem;
-    touch-action: manipulation;
+    /*touch-action: manipulation;*/
 }
 
 .btnControls i {
