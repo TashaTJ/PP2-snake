@@ -35,6 +35,8 @@ for (let home of homeBtn) {
   home.addEventListener('click', displayHomeScreen);
 }
 
+// touch controls 
+let touchControls = document.getElementsByClassName('btnControls');
 
 // Screen display functions
 function displayGameScreen() {
