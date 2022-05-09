@@ -211,6 +211,10 @@ i {
     background-color: #c0c0c0;
 } 
 
+#table-buttons td {
+    padding: 3px;
+}
+
 /* Game Over Screen */
 
 /* Inspiration from W3Schools https://www.w3schools.com/howto/howto_css_modals.asp */
