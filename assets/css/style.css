@@ -184,6 +184,11 @@ i {
     font-weight: bold;
 }
 
+.close:hover {
+    color: var(--text);
+    cursor: pointer;
+}
+
 /* For smaller screen sizes, from 500px upwards */
 
 @media only screen and (min-width:500px) {
