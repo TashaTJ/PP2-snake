@@ -13,6 +13,12 @@ const closeBtn = document.getElementsByClassName('close')[0];
 
 startBtn.addEventListener('click', displayGameScreen);
 
+// gesture recognition is applied to all DOM elements in the body and any default click/tapping behaviour suspended
+const hammertime = new Hammer.Manager(document.querySelector("body"), {
+  prevent_default: true,
+  touchAction: "none",
+});
+
 // Game audio variables.
 let biteSound = new Audio('assets/sounds/bite-sound.mp3');
 const leftSound = new Audio('assets/sounds/left.wav');
