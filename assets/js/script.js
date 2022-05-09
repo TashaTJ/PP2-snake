@@ -47,6 +47,20 @@ toggleSound.addEventListener('click', (e) => {
   if (biteSound.muted === false && leftSound.muted === false && rightSound.muted === false && downSound.muted === false && upSound.muted === false) {
     e.target.style.color = 'greenyellow';
     e.target.className = 'fas fa-volume-mute';
+    biteSound.muted = true;
+    leftSound.muted = true;
+    rightSound.muted = true;
+    downSound.muted = true;
+    upSound.muted = true;
+  } else {
+    e.target.style.color = 'white';
+    e.target.className = 'fas fa-volume-up';
+    biteSound.muted = false;
+    leftSound.muted = false;
+    rightSound.muted = false;
+    downSound.muted = false;
+    upSound.muted = false;
+  }
 });
 
 // Game variables 
