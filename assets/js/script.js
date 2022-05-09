@@ -158,6 +158,7 @@ function isGameOver() {
   if (gameOver) {
     gameScreen.style.display = 'none';
     gameOverScreen.style.display = 'flex';
+    modalParagraph.textContent = `You scored: ${score}`;
 
   }
   console.log("game over", gameOver);
