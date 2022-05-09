@@ -187,12 +187,12 @@ i {
 .snake {
     background-color: green;
     background-size: cover;
-    background-image: url(/assets/images/snakeskin.png);
+    background-image: url(../images/snakeskin.png);
 }
 
 .apple {
     background: var(--background);
-    background-image: url(/assets/images/apple.png);
+    background-image: url(../images/apple.png);
     background-size: cover;
 }
 
