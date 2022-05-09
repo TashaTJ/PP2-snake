@@ -157,6 +157,7 @@ function isGameOver() {
   }
   if (gameOver) {
     gameScreen.style.display = 'none';
+    gameOverScreen.style.display = 'flex';
 
   }
   console.log("game over", gameOver);
