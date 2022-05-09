@@ -20,7 +20,7 @@ const rightSound = new Audio('assets/sounds/right.wav');
 const upSound = new Audio('assets/sounds/up.wav');
 const downSound = new Audio('assets/sounds/down.wav');
 
-let toggleSound = getElementById('sound');
+let toggleSound = document.getElementById('sound');
 
 // Loop over home buttons class and add event listener.
 for (let home of homeBtn) {
@@ -43,9 +43,11 @@ closeBtn.addEventListener('click', () => {
   displayHomeScreen();
 });
 
-toggleSound.addEventListener('click') {
-  
-}
+toggleSound.addEventListener('click', (e) => {
+  if (biteSound.muted === false && leftSound.muted === false && rightSound.muted === false && downSound.muted === false && upSound.muted === false) {
+    e.target.style.color = 'greenyellow';
+    e.target.className = 'fas fa-volume-mute';
+});
 
 // Game variables 
 const grid = document.querySelector(".grid");
