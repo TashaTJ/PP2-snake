@@ -220,6 +220,10 @@ window.addEventListener(
 
 // this should come after all functions 
 
+function closeModal(modal) {
+  modal.style.display = 'none';
+}
+
 function displayHomeScreen() {
   gameScreen.style.display = 'none';
   homeScreen.style.display = 'flex';
