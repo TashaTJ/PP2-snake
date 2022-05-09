@@ -21,7 +21,7 @@ const upSound = new Audio('assets/sounds/up.wav');
 const downSound = new Audio('assets/sounds/down.wav');
 
 let toggleSound = document.getElementById('sound');
-
+ 
 // Loop over home buttons class and add event listener.
 for (let home of homeBtn) {
   home.addEventListener('click', displayHomeScreen);
@@ -62,6 +62,9 @@ toggleSound.addEventListener('click', (e) => {
     upSound.muted = false;
   }
 });
+
+// Hammertime touch gestures
+
 
 // Game variables 
 const grid = document.querySelector(".grid");
@@ -196,7 +199,7 @@ function control(e) {
   } else if (e.keyCode === 38) {
     console.log("up pressed");
     direction = -width;
-    upSound.play()
+    upSound.play();
   } else if (e.keyCode === 37) {
     console.log("left pressed");
     direction = -1;
