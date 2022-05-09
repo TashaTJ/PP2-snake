@@ -187,8 +187,6 @@ function control(e) {
 }
 
 document.addEventListener("keyup", control);
-/* startBtn.addEventListener('click', displayGameScreen);*/
-/* startGame(); */
 
 window.addEventListener(
   "keydown",
