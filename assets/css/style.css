@@ -197,6 +197,10 @@ i {
 }
 
 /* Touch controls */
+
+tbody {
+    display: block;
+}
 #touch-controls {
     position: relative;
     margin: 0 auto;
