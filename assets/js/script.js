@@ -13,7 +13,6 @@ const closeBtn = document.getElementsByClassName('close')[0];
 
 startBtn.addEventListener('click', displayGameScreen);
 
-
 // Game audio variables.
 let biteSound = new Audio('assets/sounds/bite-sound.mp3');
 const leftSound = new Audio('assets/sounds/left.wav');
