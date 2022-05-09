@@ -19,6 +19,8 @@ const hammertime = new Hammer.Manager(document.querySelector("body"), {
   touchAction: "none",
 });
 
+let hammerMe = document.getElementsByTagName('body');
+
 // Game audio variables.
 let biteSound = new Audio('assets/sounds/bite-sound.mp3');
 const leftSound = new Audio('assets/sounds/left.wav');
@@ -27,11 +29,12 @@ const upSound = new Audio('assets/sounds/up.wav');
 const downSound = new Audio('assets/sounds/down.wav');
 
 let toggleSound = document.getElementById('sound');
- 
+
 // Loop over home buttons class and add event listener.
 for (let home of homeBtn) {
   home.addEventListener('click', displayHomeScreen);
 }
+
 
 // Screen display functions
 function displayGameScreen() {
@@ -69,23 +72,23 @@ toggleSound.addEventListener('click', (e) => {
   }
 });
 
-// Hammertime touch gestures
+/*// Hammertime touch gestures
 // https://hammerjs.github.io/
-hammertime.on('swipeleft swiperight swipeup swipedown', (e) => {
-  if (e.type === 'swipeleft') {
+hammerMe.on('panleft panright swipeup swipedown', (e) => {
+  if (e.type === 'panleft') {
     direction = -1;
     leftSound.play();
   } else if (e.type === 'swipeup') {
     direction = -width;
     upSound.play();
-  } else if (e.type === 'swiperight') {
+  } else if (e.type === 'panright') {
     direction = 1;
     rightSound.play();
   } else if (e.type === 'swipedown') {
     downSound.play();
     direction = +width;
   }
-});
+}); */
 
 // Game variables 
 const grid = document.querySelector(".grid");
