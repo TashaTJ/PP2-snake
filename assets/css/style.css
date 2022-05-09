@@ -163,6 +163,27 @@ i {
     background-color: rgba(0,0,0,0.4); 
 }
 
+/* Inspiration from W3Schools https://www.w3schools.com/howto/howto_css_modals.asp */
+.modal-content {
+    position: relative;
+    background-color: greenyellow;
+    text-align: center;
+    color: var(--background);
+    margin: 15% auto; 
+    padding: 3rem;
+    border: 3px solid white;
+    width: 80%; 
+}
+
+.close {
+    color: black;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 /* For smaller screen sizes, from 500px upwards */
 
 @media only screen and (min-width:500px) {
