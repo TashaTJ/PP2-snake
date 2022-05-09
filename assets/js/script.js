@@ -214,8 +214,6 @@ window.addEventListener(
   false
 );
 
-// this should come after all functions 
-
 function closeModal(modal) {
   modal.style.display = 'none';
 }
