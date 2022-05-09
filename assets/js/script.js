@@ -36,8 +36,7 @@ function displayGameScreen() {
   startGame();
 }
 
-/* Close winner modal that is passed into the function */
-
+/* Close modal & return to home screen */
 closeBtn.addEventListener('click', () => {
   closeModal(gameOverScreen);
   displayHomeScreen();
