@@ -20,6 +20,8 @@ const rightSound = new Audio('assets/sounds/right.wav');
 const upSound = new Audio('assets/sounds/up.wav');
 const downSound = new Audio('assets/sounds/down.wav');
 
+let toggleSound = getElementById('sound');
+
 // Loop over home buttons class and add event listener.
 for (let home of homeBtn) {
   home.addEventListener('click', displayHomeScreen);
