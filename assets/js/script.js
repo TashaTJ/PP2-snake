@@ -71,17 +71,17 @@ toggleSound.addEventListener('click', (e) => {
 
 // Hammertime touch gestures
 // https://hammerjs.github.io/
-hammertime.on(`panleft panright panup pandown`, (e) => {
-  if (e.type === `panleft`) {
+hammertime.on('swipeleft swiperight swipeup swipedown', (e) => {
+  if (e.type === 'swipeleft') {
     direction = -1;
     leftSound.play();
-  } else if (e.type === `panup`) {
+  } else if (e.type === 'swipeup') {
     direction = -width;
     upSound.play();
-  } else if (e.type === `panright`) {
+  } else if (e.type === 'swiperight') {
     direction = 1;
     rightSound.play();
-  } else if (e.type === `pandown`) {
+  } else if (e.type === 'swipedown') {
     downSound.play();
     direction = +width;
   }
