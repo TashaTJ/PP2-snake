@@ -251,6 +251,10 @@ i {
       width: 3rem;
       height: 3rem;
     }
+
+    .snake {
+        background-image: url(../images/snakeskin.png);
+    }
   }
 
   @media only screen and (min-width:768px) {
