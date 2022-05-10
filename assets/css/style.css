@@ -60,6 +60,10 @@ h1 {
     margin-bottom: 2rem;
 }
 
+.giphy-embed {
+    pointer-events: none;
+}
+
 i {
     margin-bottom: 2rem;
     -webkit-animation: fadeIn ease 2s;

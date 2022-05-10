@@ -145,6 +145,7 @@ function startGame() {
 }
 
 function move() {
+  console.log(currentSnake);
   if (
     (currentSnake[0] + width >= width * width && direction === width) || //if snake has hit bottom
     (currentSnake[0] % width > width - 1 && direction === 1) || //if snake has hit right wall
@@ -152,7 +153,7 @@ function move() {
     (currentSnake[0] - width < 0 && direction === -width) || //if snake has hit top
     squares[currentSnake[0] + direction].classList.contains("snake")
   ) {
-  
+    gameScreen.style.display = 'none';
     return clearInterval(timerId);
   }
 
@@ -184,20 +185,40 @@ function move() {
     intervalTime = intervalTime * speed;
     timerId = setInterval(move, intervalTime);
   }
+  isGameOver();
   squares[currentSnake[0]].classList.add("snake");
 }
 
+function isGameOver() {
+  let gameOver = false;
+  // Walls 
+  if (currentSnake[0] >= width * width && direction === width) { // bottom
+    gameOver = true;
+  } else if (currentSnake[0] === width && direction === 1) { // right       
+    gameOver = true;
+  } else if (currentSnake[0] <= 0 && direction === -1) { // left
+    gameOver = true;
+  } else if (currentSnake[0] <= 0 && direction === -width) { // top
+    gameOver = true;
+  }
+  if (gameOver) {
+    gameScreen.style.display = 'none';
+    gameOverScreen.style.display = 'flex';
+    modalParagraph.textContent = `You scored: ${score}`;
+  }
+  console.log("game over", gameOver);
+  console.log(modalParagraph);
+  return gameOver;
+
+}
 
 function generateApple() {
   do {
     appleIndex = Math.floor(Math.random() * squares.length);
   } while (squares[appleIndex].classList.contains("snake"));
-  isAppleOver = false;
-  for(let i=0; i< currentSnake.length; i++) {
-    if (currentSnake[i] == appleIndex) {
-      isAppleOver = true;
-    }
-  }
+  squares[appleIndex].classList.add("apple");
+}
+generateApple();
 
 
 function control(e) {
@@ -238,7 +259,6 @@ function touchControlsClicked() {
     downSound.play();
     direction = +width;
   }
-
 }
 
 document.addEventListener("keyup", control);
