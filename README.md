@@ -146,5 +146,39 @@ It's intuitively designed so the user can navigate it with ease, with prominent 
 ![Mobile Home Screen](docs/readme-images/mobile-home-screen.png)
 ![Home Screen image](docs/readme-images/home-screen.png)
 
+## Top bar
+
+* The user can navigate to the home screen from the game and game over screens through the home button, top left
+* The icon is a universally recognised home
+* The sound button, top right, retains it's position on the game and game over screens and the sound can be activated or muted by the user as they wish.
+* Upon mute, the button turns neon green
+* On the quiz starting two more informative icons are added to the right of these: the timer countdown and the user's score.
+* The navbar is responsive and does not change order throughout screen size changes.
+
+<details><summary>Mobile top bar images</summary>
+
+![info-bar image of all screens other than questions screen](docs/readme-images/info-bar-image-1.png)
+![info-bar of questions screen while playing quiz](docs/readme-images/info-bar-image-2.png)
+![info-bar of questions screen while playing quiz image 2](docs/readme-images/info-bar-image-3.png)
+
+</details>
+<details><summary>Desktop top bar images</summary>
+
+![Mobile info-bar image of all screens other than questions](docs/readme-images/mobile-info-bar-2.jpeg)
+![Mobile info-bar of questions screen while playing quiz](docs/readme-images/mobile-info-bar.jpeg)
+
+</details>
+
+## Game Screen - Core of the Application
+
+* This is the heart of the game. The user is presented with the game area, pre-populated with a snake and apple. The game begins automatically on screen load and the snake begins to move to the right. 
+* The touch control buttons below the game area are arranged in a diamond shape with universally recognised arrows indicating their function. They change the snake's direction.   
+* On desktop, the arrow keys can also be used to change direction of the snake, indicated in the How To Play section on the home screen.
+* Within the touch controls diamond, lies the pause button. This pauses the game on touch and toggles to a play button. On second touch the game continues from where it was. This feauture can't be underestimated! It avoids the user's bitter dissapointment should a distraction arise mid play, and cause game over. Now the user can pause, deal with said distraction, and get back to eating apples! 
+* The score section, atop the game, indicates how many apples have been swallowed and increments by 1 to keep things simple. 
+* The user can return home at any point during a live game, and from here we have the comforting familiarity of the home page and the play button can generate a new game if desired. 
+
+
+
 
 
