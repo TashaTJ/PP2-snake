@@ -190,6 +190,34 @@ It's intuitively designed so the user can navigate it with ease, with prominent 
 ![Mobile Game Over Screen image](docs/readme-images/mobile-gameover-screen.png)
 ![Game Over Screen image](docs/readme-images/gameover-screen.png)
 
+## Sound
+
+* the user has the option to mute/unmute sound via the sound button on the top bar at all times during the game 
+* The sound gives the user additional feedback as they play for a satifiying UX
+* On snake direction change there are modern tonal sounds, which traverse the musical scale in the same direction as the snake moves
+* On ingestion of an apple there's a comedy bite sound to amplify the satisfaction of a feed!
+
+# Future Features  
+
+## Difficulty levels
+
+* Several different levels - including speed increase, multiple snakes and extra walls - could be intorduced. They would be accessed via a settings button, and toggled with radio buttons as indicated in the wireframes
+
+## Interchangeable Snake Skins
+
+* Within the settings screen, the user could also toggel through a variety of colourful snake skin desigs, for increased enjoyment of the game
+
+## High Scores 
+
+* would sit on top of the current score on the game screen, and indicate the user's highest score to date. This would increase the user's level of engagemnt and desire to improve 
+
+## Global Highscores
+
+* Instead of saving the high scores locally, saving the scores on a global level would raise the level of engagement with the game, as users could compete against other people while accessing the site from different devices.
+
+[Back to top](<#contents>)
+
+
 
 
 
