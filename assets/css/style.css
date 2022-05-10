@@ -199,7 +199,7 @@ h2 {
 .snake {
     background-color: green;
     background-size: cover;
-    background-image: url(../images/snakeskin-min.png);
+    background-image: url(../images/snakeskin.png);
 }
 
 .apple {
