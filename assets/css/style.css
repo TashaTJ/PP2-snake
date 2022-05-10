@@ -83,7 +83,7 @@ i {
     }
 
     100% {
-        opacity: 3;
+        opacity: 1;
     }
 }
 
@@ -93,7 +93,7 @@ i {
     }
 
     100% {
-        opacity: 3;
+        opacity: 1;
     }
 }
 
@@ -265,9 +265,9 @@ h2 {
     background-color: rgba(0,0,0,0.4); 
 }
 
-.game-over-screen> {
+/* .game-over-screen {
     display: flex;
-}
+}  */
 
 .modal-header {
     font-family: 'Press Start 2P', sans-serif;
