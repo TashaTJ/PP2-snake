@@ -105,3 +105,13 @@ The **user** is any person who has read the Harry Potter book series (1-7) and w
 ![game](docs/wireframes/)
 
 </details>
+
+## Site Structure
+
+The game lives within a one page site with 3 different 'screens', that the user navigates through to engage with the game. 
+
+- Screen 1  The Home screen - offers one main play button, to access the game screen, and simple game instructions 
+- Screen 2  The game screen - has a game area and control buttons 
+- screen 3 The game over screen - informs the user the game is over, and their current score 
+
+Screens 2 and 3 have a top bar which offers a route back to the home page, and a toggle sound mute button. Upon the snake's collision with either a wall or itself, the user is automatically taken to the game over screen that on closure gives the option to navigate back to the home screen.
