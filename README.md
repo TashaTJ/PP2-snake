@@ -124,3 +124,8 @@ The final color theme of neon green, black and white was chosen due to it's dual
 
 ![Site colour scheme](docs/readme-images/color-palete.png)
 
+### Typography
+
+The fonts chosen continue the past present theme, with 'Press Start 2P' (headings) for it's retro pixelated design and 'Lato' (body) for it's modern simple curves and easy readability to maximise enjoyment of the site.   
+
+[Back to top](<#contents>)
