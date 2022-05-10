@@ -252,7 +252,24 @@ function touchControlsClicked() {
     downSound.play();
     direction = +width;
   }
-
+  if(this.getAttribute("id") === "pause") {
+    const pauseElement = document.getElementById("pause");
+    const element = pauseElement.children[0];
+    
+    if (element.classList.contains("fa-pause")) {
+      element.classList.remove("fa-solid");
+      element.classList.remove("fa-pause");
+      element.classList.add("fas");
+      element.classList.add("fa-play");
+      clearInterval(timerId);
+    } else if (element.classList.contains("fa-play")) {
+      element.classList.remove("fas");
+      element.classList.remove("fa-play");
+      element.classList.add("fa-solid");
+      element.classList.add("fa-pause");
+      timerId = setInterval(move, intervalTime);
+    } 
+  }
 }
 
 document.addEventListener("keyup", control);
