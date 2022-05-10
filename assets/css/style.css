@@ -63,6 +63,7 @@ h1 {
 
 .giphy-embed {
     pointer-events: none;
+    border: 0;
 }
 
 i {
