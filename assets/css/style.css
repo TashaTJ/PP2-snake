@@ -64,8 +64,8 @@ h1 {
 .giphy-embed {
     pointer-events: none;
     border: 0;
-    width: 25rem;
-    height: 25rem;
+    width: 20rem;
+    height: 20rem;
 }
 
 i {
