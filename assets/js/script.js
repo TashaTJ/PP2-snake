@@ -206,70 +206,77 @@ function generateApple() {
       isAppleOver = true;
     }
   }
+  if (isAppleOver) {
+    console.log("Colliding... generating again");
+    generateApple();
+  }
+  squares[appleIndex].classList.add("apple");
+}
+generateApple();
 
-  function control(e) {
-    if (e.keyCode === 39) {
-      console.log("right pressed");
-      direction = 1;
-      rightSound.play();
-    } else if (e.keyCode === 38) {
-      console.log("up pressed");
-      direction = -width;
-      upSound.play();
-    } else if (e.keyCode === 37) {
-      console.log("left pressed");
-      direction = -1;
-      leftSound.play();
-    } else if (e.keyCode === 40) {
-      console.log("down pressed");
-      downSound.play();
-      direction = +width;
-    }
+function control(e) {
+  if (e.keyCode === 39) {
+    console.log("right pressed");
+    direction = 1;
+    rightSound.play();
+  } else if (e.keyCode === 38) {
+    console.log("up pressed");
+    direction = -width;
+    upSound.play();
+  } else if (e.keyCode === 37) {
+    console.log("left pressed");
+    direction = -1;
+    leftSound.play();
+  } else if (e.keyCode === 40) {
+    console.log("down pressed");
+    downSound.play();
+    direction = +width;
+  }
+}
+
+// touch controls 
+function touchControlsClicked() {
+  if (this.getAttribute("id") === "btn-left") {
+    direction = -1;
+    leftSound.play();
+  }
+  if (this.getAttribute("id") === "btn-right") {
+    direction = 1;
+    rightSound.play();
+  }
+  if (this.getAttribute("id") === "btn-up") {
+    direction = -width;
+    upSound.play();
+  }
+  if (this.getAttribute("id") === "btn-down") {
+    downSound.play();
+    direction = +width;
   }
 
-  // touch controls 
-  function touchControlsClicked() {
-    if (this.getAttribute("id") === "btn-left") {
-      direction = -1;
-      leftSound.play();
+}
+
+document.addEventListener("keyup", control);
+
+window.addEventListener(
+  "keydown",
+  function (e) {
+    if (
+      ["Space", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(
+        e.code
+      ) > -1
+    ) {
+      e.preventDefault();
     }
-    if (this.getAttribute("id") === "btn-right") {
-      direction = 1;
-      rightSound.play();
-    }
-    if (this.getAttribute("id") === "btn-up") {
-      direction = -width;
-      upSound.play();
-    }
-    if (this.getAttribute("id") === "btn-down") {
-      downSound.play();
-      direction = +width;
-    }
+  },
+  false
+);
 
-  }
+function closeModal(modal) {
+  modal.style.display = 'none';
+}
 
-  document.addEventListener("keyup", control);
-
-  window.addEventListener(
-    "keydown",
-    function (e) {
-      if (
-        ["Space", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(
-          e.code
-        ) > -1
-      ) {
-        e.preventDefault();
-      }
-    },
-    false
-  );
-
-  function closeModal(modal) {
-    modal.style.display = 'none';
-  }
-
-  function displayHomeScreen() {
-    gameScreen.style.display = 'none';
-    homeScreen.style.display = 'flex';
-    document.getElementsByClassName('controls')[0].style.disply = 'none';
-  }
+function displayHomeScreen() {
+  gameScreen.style.display = 'none';
+  homeScreen.style.display = 'flex';
+  document.getElementsByClassName('controls')[0].style.disply = 'none';
+}
