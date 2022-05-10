@@ -37,7 +37,7 @@ for (let i = 0; i < touchControls.length; i++) {
 function displayGameScreen() {
   homeScreen.style.display = 'none';
   gameScreen.style.display = 'flex';
-  gameOverScreen.style.display = 'flex';
+  gameOverScreen.style.display = 'none';
   document.getElementsByClassName('controls')[0].style.display = 'flex';
 
   startGame();
@@ -162,8 +162,8 @@ function move() {
 }
 
 function exitGame() {
-  gameScreen.style.display = 'none';
-  gameOverScreen.style.display = 'flex';
+  gameScreen.style.display = 'flex';
+  gameOverScreen.style.display = 'block';
   modalParagraph.textContent = `You scored: ${score}`;
   console.log("game over", gameOver);
   return gameOver;
