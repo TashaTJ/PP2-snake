@@ -178,8 +178,8 @@ It's intuitively designed so the user can navigate it with ease, with prominent 
 * The score section, atop the game, indicates how many apples have been swallowed and increments by 1 to keep things simple. 
 * The user can return home at any point during a live game, and from here we have the comforting familiarity of the home page and the play button can generate a new game if desired. 
 
-<details><summary>Mobile Game Screen</summary>
-<details><summary>Desktop Game Screen</summary>
+<details><summary>Mobile Game Screen</summary></details>
+<details><summary>Desktop Game Screen</summary></details>
 
 ## Game Over Screen
 
@@ -231,6 +231,116 @@ It's intuitively designed so the user can navigate it with ease, with prominent 
 * Gitpod - Used to develop the website
 * GitBash - Terminal used to push changes to the GitHub repository
 * GitHub - Used to host and deploy the website
+
+[Back to top](<#contents>)
+
+# Testing
+
+## Code Validation
+
+This game has been tested via W3C HTML validator and W3C CSS validator. There were a few minor errors that came up for the HTML pages which were immediately corrected and documented down below in [Bugs Fixed](<#bugs-fixed>).
+
+![HTML W3C validator](docs/readme-images/html-validator.png)
+![CSS W3C Validator](docs/readme-images/css-validator-pass.png)
+
+## JSHint
+
+The Javascript file was validated in JSHint. Initially there were a couple of undefined varibles which have since been defined
+
+JSHint came up with no errors and multiple warnings which are explained below in [Unresolved Bugs](<#unresolved-bugs>).
+
+![JSHint validation for script.js](docs/readme-images/jshint-scriptpage.png)
+![JSHint validation for questions.js](docs/readme-images/jshint-questions-jspage.png)
+![JSHint validation for quiz-audio.js](docs/readme-images/jshint-audio-jspage.png)
+![JSHint validation for timer.js](docs/readme-images/jshint-timer-jspage.png)
+![JSHint validation for highscores.js](docs/readme-images/jshint-highscores-jspage.png)
+
+## Lighthouse Testing
+
+The site was also tested on Performance, Accessibility, Best Practices and SEO via Lighthouse testing in Chrome DevTools. Both mobile and desktop performaces were tested. 
+
+![Lighthouse testing for desktop](docs/readme-images/lighthouse-testing.png)
+
+![Lighthouse testing for mobile](docs/readme-images/lighthouse-testing2.png)
+
+## Accessibility Testing
+
+The website passed it's color contrast for accessibility purposes test via A11y color contrast accessibility validator 
+
+![A11y color contrast accessibility](docs/readme-images/color-contrast-accessibility-validator.png)
+
+## Responsive Testing
+
+Responsiveness was tested via Chrome Devtools, The Viewport Resizer chrome extension and The Responsive Design Checker website.
+
+[Back to top](<#contents>)
+
+## Manual Testing
+
+In addition to the automated sites above, manual testing included:
+
+- firefox, 
+- safari 
+- chrome 
+
+and multiple devices 
+- iphone 13 pro
+- ipad pro
+- samsung galaxy s22
+- macbook pro
+
+[Back to top](<#contents>)
+
+* Home Screen
+
+    * Verified that clicking the play Button icon initiates game
+
+* Game Screen
+
+    * Verified that clicking the Home Button icon on the top-bar brought the user back to the home screen
+    * Verified that clicking the Sound Button icon on the top-bar brought the user to mute/unmute as desired
+    * Verified that all touch controls work in their indicated direction
+    * Verified that the pause button toggles from play to pause to play as many times as the user presses it
+    * Verified that the game speed increased as the game progressed 
+    * Verified that the scores kept count of the number of apple eaten
+    * Verified that all sounds work if the sound is toggled on; touch controls, arrows and ingestion of apple
+    * Verified that upon collision of walls or ingestion of apple, the game ends and the game over screen bec omes visible
+
+* Game Over Screen
+
+    * Verified that clicking close button on the game over screen closed the modal 
+    * Verified that clicking the Home Button icon on the top-bar (left) brought the user back to the Home screen where the play button worked as predicted to initialise a new game 
+    * Verified that toggling the sound button icon on the top-bar (right) toggles the sound mute/unmute as desired
+    * Verified that all sounds work if the sound is toggled on; background music and button clicks.
+
+## Bugs Fixed
+
+### Right Wall Collision 
+
+There was an unexpected behavior occuring on snake collsion with the right wall, as it looped round and came back through the left wall instead of displaying the game over screen. This was fixed with a simple >= in the logic as opposed to just a >.
+
+![right wall collision error](docs/readme-images/bugs-image.png)
+
+### The Score displayed in Game Over Screen 
+
+The score was sporadically appearing in the game over screen, this was fixed by adjusting the setInterval function in the javascript. 
+
+![Verified via ](docs/readme-images/testing-difficulty-level.png)
+
+### Apple sound after game over 
+
+The apple sound could be heard after game over, this was corrected by creating an exitGame function in the javascript and calling it within the move function
+
+![Verified via ](docs/readme-images/testing-difficulty-level.png)
+
+### Apple genereated within snake body 
+
+undesirably, the apple was occasionally generating within the snake body. This was a logical error and fixed within the javascript with a for loop that disabled such behavior
+
+![Verified via ](docs/readme-images/testing-difficulty-level.png)
+
+
+
 
 
 
