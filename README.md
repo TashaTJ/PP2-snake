@@ -115,3 +115,12 @@ The game lives within a one page site with 3 different 'screens', that the user 
 - screen 3 The game over screen - informs the user the game is over, and their current score 
 
 Screens 2 and 3 have a top bar which offers a route back to the home page, and a toggle sound mute button. Upon the snake's collision with either a wall or itself, the user is automatically taken to the game over screen that on closure gives the option to navigate back to the home screen.
+
+## Design Choices
+
+### Colour Scheme
+
+The final color theme of neon green, black and white was chosen due to it's dual personality of both past and future. Neon, to evoke the 90's, against monochrome black and white to maximize contrast and imply speed, simplicity and modernity. The dominating black background allows the neon to glow against it, and pop's both the snakeskin and apple features. 
+
+![Site colour scheme](docs/readme-images/color-palete.png)
+
