@@ -33,7 +33,7 @@ body {
 
 h1 {
     font-family: 'Press Start 2P', sans-serif;
-    font-size: 8rem;
+    font-size: 6rem;
 }
 
 #home-screen {
@@ -70,7 +70,7 @@ i {
     margin-bottom: 2rem;
     -webkit-animation: fadeIn ease 2s;
             animation: fadeIn ease 2s;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0 10px;
 }
 
@@ -294,6 +294,10 @@ i {
       width: 30rem;
       height: 30rem;
     }
+
+    h1 {
+        font-size: 8rem;
+    }
   
     .square {
       width: 3rem;
@@ -329,4 +333,12 @@ i {
       width: 5rem;
       height: 5rem;
     }
+
+    h1 {
+        font-size: 10rem;
+    }
+
+    .giphy-embed {
+        width: 450;
+        height: 450;    }
   }
