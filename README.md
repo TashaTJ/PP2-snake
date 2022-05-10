@@ -217,6 +217,21 @@ It's intuitively designed so the user can navigate it with ease, with prominent 
 
 [Back to top](<#contents>)
 
+# Technologies Used
+
+* HTML5 - Site structure and content 
+* CSS3 - Site styling
+* Javascript - Site functionality and styling
+* [Auto Prefixer](https://github.com/postcss/autoprefixer) - PostCSS plugin to parse CSS and add vendor prefixes to CSS
+* [Balsamiq](https://balsamiq.com/) - for wireframe creation
+* [Optimizilla](https://imagecompressor.com/) - Used to compress images
+* [Giphy](https://giphy.com/) - to create
+* [Final Cut Pro](https://www.apple.com/uk/final-cut-pro/) - to manipualte snake animation for gif
+* Google Chrome DevTools - Used to debug and test responsiveness of the site
+* Gitpod - Used to develop the website
+* GitBash - Terminal used to push changes to the GitHub repository
+* GitHub - Used to host and deploy the website
+
 
 
 
