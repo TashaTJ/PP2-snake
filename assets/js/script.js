@@ -15,10 +15,11 @@ startBtn.addEventListener('click', displayGameScreen);
 
 // Game audio variables.
 let biteSound = new Audio('assets/sounds/bite-sound.mp3');
-const leftSound = new Audio('assets/sounds/left.wav');
-const rightSound = new Audio('assets/sounds/right.wav');
-const upSound = new Audio('assets/sounds/up.wav');
-const downSound = new Audio('assets/sounds/down.wav');
+const leftSound = new Audio('assets/sounds/left.mp3');
+const rightSound = new Audio('assets/sounds/right.mp3');
+const upSound = new Audio('assets/sounds/up.mp3');
+const downSound = new Audio('assets/sounds/down.mp3');
+const gameOverTone = new Audio('assets/sounds/game-over-tone.mp3');
 
 let toggleSound = document.getElementById('sound');
 
@@ -50,7 +51,7 @@ closeBtn.addEventListener('click', () => {
 });
 
 toggleSound.addEventListener('click', (e) => {
-  if (biteSound.muted === false && leftSound.muted === false && rightSound.muted === false && downSound.muted === false && upSound.muted === false) {
+  if (biteSound.muted === false && leftSound.muted === false && rightSound.muted === false && downSound.muted === false && upSound.muted === false && gameOverTone.muted === false) {
     e.target.style.color = 'greenyellow';
     e.target.className = 'fas fa-volume-mute';
     biteSound.muted = true;
@@ -58,6 +59,7 @@ toggleSound.addEventListener('click', (e) => {
     rightSound.muted = true;
     downSound.muted = true;
     upSound.muted = true;
+    gameOverTone = true;
   } else {
     e.target.style.color = 'white';
     e.target.className = 'fas fa-volume-up';
@@ -66,6 +68,7 @@ toggleSound.addEventListener('click', (e) => {
     rightSound.muted = false;
     downSound.muted = false;
     upSound.muted = false;
+    gameOverTone = false;
   }
 });
 
@@ -126,6 +129,7 @@ function move() {
     (currentSnake[0] - width < 0 && direction === -width) || //if snake has hit top
     squares[currentSnake[0] + direction].classList.contains("snake")
   ) {
+    gameOverTone.play();
     exitGame();
     return clearInterval(timerId);
   }
