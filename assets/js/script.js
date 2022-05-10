@@ -19,7 +19,7 @@ const leftSound = new Audio('assets/sounds/left.mp3');
 const rightSound = new Audio('assets/sounds/right.mp3');
 const upSound = new Audio('assets/sounds/up.mp3');
 const downSound = new Audio('assets/sounds/down.mp3');
-const gameOverTone = new Audio('assets/sounds/game-over-tone.mp3');
+let gameOverTone = new Audio('assets/sounds/game-over-tone.mp3');
 
 let toggleSound = document.getElementById('sound');
 
