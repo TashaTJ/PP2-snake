@@ -178,6 +178,21 @@ It's intuitively designed so the user can navigate it with ease, with prominent 
 * The score section, atop the game, indicates how many apples have been swallowed and increments by 1 to keep things simple. 
 * The user can return home at any point during a live game, and from here we have the comforting familiarity of the home page and the play button can generate a new game if desired. 
 
+<details><summary>Mobile Game Screen</summary>
+<details><summary>Desktop Game Screen</summary>
+
+## Game Over Screen
+
+* The Game Over screen becomes visible on the snake's collision with either a wall or itself.
+* It informs the user of game over and then indicates their score
+* The close icon, top right, closes the game over screen and allows the user to navigate back home for a repeat performance.
+
+![Mobile Game Over Screen image](docs/readme-images/mobile-gameover-screen.png)
+![Game Over Screen image](docs/readme-images/gameover-screen.png)
+
+
+
+
 
 
 
