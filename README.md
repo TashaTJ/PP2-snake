@@ -353,6 +353,62 @@ There are two warnings below in respect of declaring a function inside of a loop
 There are sound trigger issues if playing the game on mobile, including most of the touch controls and overlap of apple sounds should apples be eaten in quick succession. These are most likely due to browsers preventing audio auto play. 
 Additional info can be found [here](https://stackoverflow.com/questions/17889297/sound-does-not-play-in-mobile)
 
+![another photo here](docs/readme-images/)
+
+[Back to top](<#contents>)
+
+# Deployment
+
+The website was deployed to GitHub pages via the following methods:
+
+1. Navigate to the settings tab in the GitHub repository 
+2. Once in settings, navigate to the pages tab on the left of the page 
+3. Under source, select branch ‘master’ and then click ‘save’
+4. page will no automatically refresh and show a detailed ribbon display to indicate deployment 
+
+![Deployment Process Image](assets/readme-images/deployment-image.jpg)
+
+## To fork the repository on GitHub
+
+To make a copy or ‘fork’ the repository - 
+
+1. Log into GitHub and locate repository 
+2. On the right hand side of the page select the ‘fork’ option to create and copy of the original
+
+![Forking Process Image](assets/readme-images/fork-image.jpg)
+
+## To clone the repository on GitHub
+
+1. under the repository name, click on the ‘code’ tab 
+2. in the clone box, HTTPS tab, click on the clipboard icon 
+3. in your IED open GitBash 
+4. Changed the current working directory to the location you want the cloned directory to be made
+5. Type ‘git clone’ and then paste the URL copied from GitHub
+6. press enter and the local clone will be created 
+
+
+![Clonging Process image](assets/readme-images/clone-image.jpg)
+
+[Back to top](<#contents>)
+
+# Credits
+
+* [Modal creation tutorial](https://www.w3schools.com/howto/howto_css_modals.asp)
+* [Modal creation tutorial](https://youtu.be/XH5OW46yO8I)
+* [Tutorial about coding snake](https://youtu.be/7Azlj0f9vas)
+* [another tutorial about coding snake](https://youtu.be/7Azlj0f9vas)
+* [Tutorial for learning about setInterval and setTimeout](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous)
+* [The this keyword in Javascript](https://www.w3schools.com/js/js_this.asp)
+* [Dom manipulation refresher](https://youtu.be/y17RuWkWdn8)
+* [Javascript game refresher](https://youtu.be/UUFPEgRKwf4)
+* [Very informative coding youtube channel](https://www.youtube.com/channel/UCuwL6KfTU7VoDZYZuE1WMfA)
+
+[Back to top](<#contents>)
+
+
+
+
+
 
 
 
