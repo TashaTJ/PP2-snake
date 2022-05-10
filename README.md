@@ -319,25 +319,41 @@ and multiple devices
 
 There was an unexpected behavior occuring on snake collsion with the right wall, as it looped round and came back through the left wall instead of displaying the game over screen. This was fixed with a simple >= in the logic as opposed to just a >.
 
-![right wall collision error](docs/readme-images/bugs-image.png)
+![right wall collision error](docs/readme-images/.png)
 
 ### The Score displayed in Game Over Screen 
 
 The score was sporadically appearing in the game over screen, this was fixed by adjusting the setInterval function in the javascript. 
 
-![Verified via ](docs/readme-images/testing-difficulty-level.png)
+![Verified via ](docs/readme-images/.png)
 
 ### Apple sound after game over 
 
 The apple sound could be heard after game over, this was corrected by creating an exitGame function in the javascript and calling it within the move function
 
-![Verified via ](docs/readme-images/testing-difficulty-level.png)
+![Verified via ](docs/readme-images/.png)
 
 ### Apple genereated within snake body 
 
 undesirably, the apple was occasionally generating within the snake body. This was a logical error and fixed within the javascript with a for loop that disabled such behavior
 
-![Verified via ](docs/readme-images/testing-difficulty-level.png)
+![Verified via ](docs/readme-images/.png)
+
+## Unresolved Bugs
+
+### JSHint Validation
+
+There are two warnings below in respect of declaring a function inside of a loop. It was assured that this wouldn't be an issue as the code is correct and will cause no problems.
+
+![JSHint functions declared in a loop warning](docs/readme-images/.png)
+![JSHint functions declared in a loop warning 2](docs/readme-images/.png)
+
+### Mobile sound issues
+
+There are sound trigger issues if playing the game on mobile, including most of the touch controls and overlap of apple sounds should apples be eaten in quick succession. These are most likely due to browsers preventing audio auto play. 
+Additional info can be found [here](https://stackoverflow.com/questions/17889297/sound-does-not-play-in-mobile)
+
+
 
 
 
