@@ -70,6 +70,7 @@ h1 {
 
 i {
     margin-bottom: 2rem;
+    margin-top: 2rem;
     -webkit-animation: fadeIn ease 2s;
     animation: fadeIn ease 2s;
     font-size: 2rem;

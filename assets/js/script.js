@@ -77,24 +77,6 @@ toggleSound.addEventListener('click', (e) => {
   }
 });
 
-/*// Hammertime touch gestures
-// https://hammerjs.github.io/
-hammerMe.on('panleft panright swipeup swipedown', (e) => {
-  if (e.type === 'panleft') {
-    direction = -1;
-    leftSound.play();
-  } else if (e.type === 'swipeup') {
-    direction = -width;
-    upSound.play();
-  } else if (e.type === 'panright') {
-    direction = 1;
-    rightSound.play();
-  } else if (e.type === 'swipedown') {
-    downSound.play();
-    direction = +width;
-  }
-}); */
-
 // Game variables 
 const grid = document.querySelector(".grid");
 const scoreDisplay = document.getElementById("score");
@@ -216,19 +198,15 @@ generateApple();
 
 function control(e) {
   if (e.keyCode === 39) {
-    console.log("right pressed");
     direction = 1;
     rightSound.play();
   } else if (e.keyCode === 38) {
-    console.log("up pressed");
     direction = -width;
     upSound.play();
   } else if (e.keyCode === 37) {
-    console.log("left pressed");
     direction = -1;
     leftSound.play();
   } else if (e.keyCode === 40) {
-    console.log("down pressed");
     downSound.play();
     direction = +width;
   }
