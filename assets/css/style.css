@@ -205,7 +205,7 @@ h2 {
 
 .apple {
     background: var(--background);
-    background-image: url(../images/apple.png);
+    background-image: url(../images/apple-min.png);
     background-size: cover;
 }
 
