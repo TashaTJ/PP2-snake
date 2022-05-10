@@ -13,7 +13,7 @@ You can view the live site here - <a href="" target="_blank"> Snake </a>
 * [User Experience](<#user-experience-ux>)
     * [Site Aims](<#site-aims>)
     * [User Stories](<#user-stories>)
-    * [Design Wireframes](<#design-wireframes>)
+    * [Wireframes](<#wireframes>)
     * [Site Structure](<#site-structure>)
     * [Design Choices](<#design-choices>)
     *   [Colour Scheme](<#colour-scheme>)
@@ -67,3 +67,41 @@ The **user** is any person who has read the Harry Potter book series (1-7) and w
 | 8 | USER | As a user, I want to be able to start a new game when the current one ends | So I can beat my score|
 | 9 | USER | As a user, I want the game to get progressively more difficult | So it's fun yet challenging |
 | 10 | USER | As a user, I want the option to mute sound | So I can play without affecting others |
+
+## Wireframes
+
+<details> <summary> phone wireframes</summary>
+
+![Homepage](docs/wireframes/)
+
+![instructions](docs/wireframes/)
+
+![settings](docs/wireframes/)
+
+![game](docs/wireframes/)
+
+</details>
+
+<details> <summary> tablet wireframes</summary>
+
+![Homepage](docs/wireframes/)
+
+![instructions](docs/wireframes/)
+
+![settings](docs/wireframes/)
+
+![game](docs/wireframes/)
+
+</details>
+
+<details> <summary> desktop wireframes</summary>
+
+![Homepage](docs/wireframes/)
+
+![instructions](docs/wireframes/)
+
+![settings](docs/wireframes/)
+
+![game](docs/wireframes/)
+
+</details>
