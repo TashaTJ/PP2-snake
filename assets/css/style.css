@@ -86,8 +86,8 @@ img {
 i {
     margin-bottom: 2rem;
     margin-top: 2rem;
-    -webkit-animation: fadeIn ease 3s;
-    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 2s;
+    animation: fadeIn ease 2s;
     font-size: 2rem;
     margin: 0 10px;
 }
