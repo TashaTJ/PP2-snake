@@ -45,7 +45,7 @@ for (let i = 0; i < touchControls.length; i++) {
 function displayGameScreen() {
   homeScreen.style.display = 'none';
   gameScreen.style.display = 'flex';
-  gameOverScreen.style.display = 'block';
+  gameOverScreen.style.display = 'flex';
   document.getElementsByClassName('controls')[0].style.display = 'flex';
 
   startGame();
