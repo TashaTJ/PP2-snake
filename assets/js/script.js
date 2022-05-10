@@ -152,7 +152,7 @@ function move() {
     (currentSnake[0] - width < 0 && direction === -width) || //if snake has hit top
     squares[currentSnake[0] + direction].classList.contains("snake")
   ) {
-  
+    exitGame();
     return clearInterval(timerId);
   }
 
@@ -187,7 +187,7 @@ function move() {
   squares[currentSnake[0]].classList.add("snake");
 }
 
-function exitGame() {  
+function exitGame() {
   gameScreen.style.display = 'none';
   gameOverScreen.style.display = 'flex';
   modalParagraph.textContent = `You scored: ${score}`;
@@ -201,76 +201,75 @@ function generateApple() {
     appleIndex = Math.floor(Math.random() * squares.length);
   } while (squares[appleIndex].classList.contains("snake"));
   isAppleOver = false;
-  for(let i=0; i< currentSnake.length; i++) {
+  for (let i = 0; i < currentSnake.length; i++) {
     if (currentSnake[i] == appleIndex) {
       isAppleOver = true;
     }
   }
 
-
-function control(e) {
-  if (e.keyCode === 39) {
-    console.log("right pressed");
-    direction = 1;
-    rightSound.play();
-  } else if (e.keyCode === 38) {
-    console.log("up pressed");
-    direction = -width;
-    upSound.play();
-  } else if (e.keyCode === 37) {
-    console.log("left pressed");
-    direction = -1;
-    leftSound.play();
-  } else if (e.keyCode === 40) {
-    console.log("down pressed");
-    downSound.play();
-    direction = +width;
-  }
-}
-
-// touch controls 
-function touchControlsClicked() {
-  if (this.getAttribute("id") === "btn-left") {
-    direction = -1;
-    leftSound.play();
-  }
-  if (this.getAttribute("id") === "btn-right") {
-    direction = 1;
-    rightSound.play();
-  }
-  if (this.getAttribute("id") === "btn-up") {
-    direction = -width;
-    upSound.play();
-  }
-  if (this.getAttribute("id") === "btn-down") {
-    downSound.play();
-    direction = +width;
-  }
-
-}
-
-document.addEventListener("keyup", control);
-
-window.addEventListener(
-  "keydown",
-  function (e) {
-    if (
-      ["Space", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(
-        e.code
-      ) > -1
-    ) {
-      e.preventDefault();
+  function control(e) {
+    if (e.keyCode === 39) {
+      console.log("right pressed");
+      direction = 1;
+      rightSound.play();
+    } else if (e.keyCode === 38) {
+      console.log("up pressed");
+      direction = -width;
+      upSound.play();
+    } else if (e.keyCode === 37) {
+      console.log("left pressed");
+      direction = -1;
+      leftSound.play();
+    } else if (e.keyCode === 40) {
+      console.log("down pressed");
+      downSound.play();
+      direction = +width;
     }
-  },
-  false
-);
+  }
 
-function closeModal(modal) {
-  modal.style.display = 'none';
-}
+  // touch controls 
+  function touchControlsClicked() {
+    if (this.getAttribute("id") === "btn-left") {
+      direction = -1;
+      leftSound.play();
+    }
+    if (this.getAttribute("id") === "btn-right") {
+      direction = 1;
+      rightSound.play();
+    }
+    if (this.getAttribute("id") === "btn-up") {
+      direction = -width;
+      upSound.play();
+    }
+    if (this.getAttribute("id") === "btn-down") {
+      downSound.play();
+      direction = +width;
+    }
 
-function displayHomeScreen() {
-  gameScreen.style.display = 'none';
-  homeScreen.style.display = 'flex';
-  document.getElementsByClassName('controls')[0].style.disply = 'none';
-}
+  }
+
+  document.addEventListener("keyup", control);
+
+  window.addEventListener(
+    "keydown",
+    function (e) {
+      if (
+        ["Space", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(
+          e.code
+        ) > -1
+      ) {
+        e.preventDefault();
+      }
+    },
+    false
+  );
+
+  function closeModal(modal) {
+    modal.style.display = 'none';
+  }
+
+  function displayHomeScreen() {
+    gameScreen.style.display = 'none';
+    homeScreen.style.display = 'flex';
+    document.getElementsByClassName('controls')[0].style.disply = 'none';
+  }
