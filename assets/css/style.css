@@ -75,6 +75,13 @@ video {
     height: 15rem;
 }
 
+img {
+    pointer-events: none;
+    border: 0;
+    width: 15rem;
+    height: 15rem;
+}
+
 
 i {
     margin-bottom: 2rem;
