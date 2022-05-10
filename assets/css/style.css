@@ -64,8 +64,8 @@ h1 {
 .giphy-embed {
     pointer-events: none;
     border: 0;
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
 }
 
 i {
@@ -141,6 +141,10 @@ i {
     top: 0;
     left: 0;
     right: 0;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 #game-screen {
@@ -251,16 +255,29 @@ i {
 /* Inspiration from W3Schools https://www.w3schools.com/howto/howto_css_modals.asp */
 .game-over-screen {
     display: none;
-    /*justify-content: center;
-    align-items: center;
+    justify-content: center;
+   /* align-items: center;
     position: fixed; 
     z-index: 10; 
     left: 0;
     top: 0;
     width: 100%; 
-    height: 100%;*/
+    height: 100%;
     background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);*/
+}
+
+.game-over-screen > {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-header {
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+#modal-result {
+    font-size: 2rem;
 }
 
 /* Inspiration from W3Schools https://www.w3schools.com/howto/howto_css_modals.asp */
