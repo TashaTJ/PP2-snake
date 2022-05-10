@@ -405,6 +405,15 @@ To make a copy or ‘fork’ the repository -
 
 [Back to top](<#contents>)
 
+# Acknowledgements
+
+This website was executed and completed as a portfolio 2 Project for the full stack diploma at [Code Institute](https://codeinstitute.net/). 
+I would like to firstly thank my mentor, Precious Ljege for his guidance, and fellow students at Code Institute, for participating in the peer code review.  
+
+Tasha Taylor Johnson, 2022.
+
+[Back to top](<#contents>)
+
 
 
 
