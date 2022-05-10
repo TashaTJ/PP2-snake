@@ -129,3 +129,22 @@ The final color theme of neon green, black and white was chosen due to it's dual
 The fonts chosen continue the past present theme, with 'Press Start 2P' (headings) for it's retro pixelated design and 'Lato' (body) for it's modern simple curves and easy readability to maximise enjoyment of the site.   
 
 [Back to top](<#contents>)
+
+# Features
+
+This game of Snake was created to produce a 'no fuss' experience for the user with a simple design and site structure. It's centered around mobile first design and feels similar to an app. 
+
+It's intuitively designed so the user can navigate it with ease, with prominent Home and Sound button icons, and visual and audio feedback on events occurred.
+
+## Home Screen
+
+* The Home Screen is visible on site load. It's designed to be easily understandable, and to allow user to immediately start the game play.
+* The site title sits on top of a snake gif, so the user has no doubt as to what the site is.
+* In the middle of the screen, the unmistakable play button invites the user to begin immediately.
+* Below this, the how to play section informs the user  of the simple game rules.
+
+![Mobile Home Screen](docs/readme-images/mobile-home-screen.png)
+![Home Screen image](docs/readme-images/home-screen.png)
+
+
+
