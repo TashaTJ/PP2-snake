@@ -147,7 +147,7 @@ function startGame() {
 function move() {
   if (
     (currentSnake[0] + width >= width * width && direction === width) || //if snake has hit bottom
-    (currentSnake[0] % width > width - 1 && direction === 1) || //if snake has hit right wall
+    (currentSnake[0] % width >= width - 1 && direction === 1) || //if snake has hit right wall
     (currentSnake[0] % width === 0 && direction === -1) || //if snake has hit left wall
     (currentSnake[0] - width < 0 && direction === -width) || //if snake has hit top
     squares[currentSnake[0] + direction].classList.contains("snake")
@@ -187,6 +187,14 @@ function move() {
   squares[currentSnake[0]].classList.add("snake");
 }
 
+function exitGame() {  
+  gameScreen.style.display = 'none';
+  gameOverScreen.style.display = 'flex';
+  modalParagraph.textContent = `You scored: ${score}`;
+  console.log("game over", gameOver);
+  return gameOver;
+
+}
 
 function generateApple() {
   do {
