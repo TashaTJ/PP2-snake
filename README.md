@@ -3,7 +3,7 @@
 Snake is an interactive online homage to the infamous 1998 Nokia mobile game. Snake has roots in the 1976 arcade classic, Blockade, and has retianed it's legendary status largely due to it's simplistic design uncomplicated rule system. 
 
 
-You can view the live site here - <a href="" target="_blank"> Snake </a>
+You can view the live site here - <a href="https://tashatj.github.io/snake-game/" target="_blank"> Snake </a>
 
 ![Snake Am I Responsive image](docs/readme-images/multi-device-mockup-snake.png)
 
@@ -53,7 +53,7 @@ The aim of this project is to deliver an interactive, engaging game that is visu
 
 ## User Stories
 
-The **user** is any person who has read the Harry Potter book series (1-7) and would like to test their Harry Potter book knowledge.
+The **user** is any person who likes simple, digital games.
 
 | ID | ROLE | ACTION | GOAL |
 |-----------------|:-------------|:---------------:|:---------------:|
@@ -94,11 +94,11 @@ I used wireframes to initially plan the project. As the build progressed, I made
 
 The game lives within a one page site with 3 different 'screens', that the user navigates through to engage with the game. 
 
-- Screen 1  The Home screen - offers one main play button, to access the game screen, and simple game instructions 
-- Screen 2  The game screen - has a game area and control buttons 
-- screen 3 The game over screen - informs the user the game is over, and their current score 
+- Screen 1  The Home Screen - offers one main play button, to access the game screen, and simple game instructions 
+- Screen 2  The Game Screen - has a game area and control buttons 
+- screen 3 The Game Over Screen - informs the user the game is over, and their current score 
 
-Screens 2 and 3 have a top bar which offers a route back to the home page, and a toggle sound mute button. Upon the snake's collision with either a wall or itself, the user is automatically taken to the game over screen that on closure gives the option to navigate back to the home screen.
+Screens 2 and 3 have a top bar which offers a route back to the home page, and a toggle sound mute button. Upon the snake's collision with either a wall or itself, the user is automatically taken to the game over screen that on closure, takes you automatically back to the homepage for the play button.
 
 ## Design Choices
 
@@ -126,19 +126,18 @@ It's intuitively designed so the user can navigate it with ease, with prominent 
 * The Home Screen is visible on site load. It's designed to be easily understandable, and to allow user to immediately start the game play.
 * The site title sits on top of a snake gif, so the user has no doubt as to what the site is.
 * In the middle of the screen, the unmistakable play button invites the user to begin immediately.
-* Below this, the how to play section informs the user of the simple game rules.
+* Below this, the How to Play section informs the user of the simple game rules.
 
 ![Mobile Home Screen](docs/readme-images/mobile-home-screen-snake.png)
 ![Home Screen image](docs/readme-images/home-screen-desktop-snake.png)
 
 ## Top bar
 
-* The user can navigate to the home screen from the game and game over screens through the home button, top left
-* The icon is a universally recognised home
-* The sound button, top right, retains it's position on the game and game over screens and the sound can be activated or muted by the user as they wish.
+* The user can navigate to the Home Screen from the Game and Game Over screens through the Home button, top left
+* The icon is a universally recognised house
+* The sound button, top right, retains it's position on the Game and Game Over screens and the sound can be activated or muted by the user as they wish.
 * Upon mute, the button turns neon green
-* On the quiz starting two more informative icons are added to the right of these: the timer countdown and the user's score.
-* The navbar is responsive and does not change order throughout screen size changes.
+* The top-bar is responsive and does not change order throughout screen size changes
 
 <details><summary>Mobile top bar images</summary>
 
@@ -157,7 +156,7 @@ It's intuitively designed so the user can navigate it with ease, with prominent 
 
 * This is the heart of the game. The user is presented with the game area, pre-populated with a snake and apple. The game begins automatically on screen load and the snake begins to move to the right. 
 * The touch control buttons below the game area are arranged in a diamond shape with universally recognised arrows indicating their function. They change the snake's direction.   
-* On desktop, the arrow keys can also be used to change direction of the snake, indicated in the How To Play section on the home screen.
+* On desktop, the keyboard arrow keys can also be used to change direction of the snake, indicated in the How To Play section on the home screen.
 * Within the touch controls diamond, lies the pause button. This pauses the game on touch and toggles to a play button. On second touch the game continues from where it was. This feauture can't be underestimated! It avoids the user's bitter dissapointment should a distraction arise mid play, and cause game over. Now the user can pause, deal with said distraction, and get back to eating apples! 
 * The score section, atop the game, indicates how many apples have been swallowed and increments by 1 to keep things simple. 
 * The user can return home at any point during a live game, and from here we have the comforting familiarity of the home page and the play button can generate a new game if desired. 
@@ -229,6 +228,7 @@ It's intuitively designed so the user can navigate it with ease, with prominent 
 * CSS3 - Site styling
 * Javascript - Site functionality and styling
 * [Auto Prefixer](https://github.com/postcss/autoprefixer) - PostCSS plugin to parse CSS and add vendor prefixes to CSS
+* [Logic Pro X](https://www.apple.com/uk/logic-pro/) - to create direction sounds
 * [Balsamiq](https://balsamiq.com/) - for wireframe creation
 * [Optimizilla](https://imagecompressor.com/) - Used to compress images
 * [Giphy](https://giphy.com/) - to create
