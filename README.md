@@ -285,7 +285,9 @@ The website passed it's color contrast for accessibility purposes test via A11y 
 
 ## Responsive Testing
 
-Responsiveness was tested via Chrome Devtools, The Viewport Resizer chrome extension and The Responsive Design Checker website.
+Responsiveness was tested via Chrome Devtools, The Viewport Resizer chrome extension and The Responsive Design Checker website. 
+
+The current version of the site is not compatible with mobile landscape mode game play, due to the static nature of the touch control buttons. In future this could be solved by moving the game screen to the left and the touch controls to the right. The optimal solution would be to lose the touch controls altogether when Hammer JS is implemented. 
 
 [Back to top](<#contents>)
 
@@ -293,15 +295,18 @@ Responsiveness was tested via Chrome Devtools, The Viewport Resizer chrome exten
 
 In addition to the automated sites above, manual testing included:
 
-- firefox, 
+- firefox 
 - safari 
 - chrome 
 
 and multiple devices 
+
 - iphone 13 pro
 - ipad pro
 - samsung galaxy s22
 - macbook pro
+
+the project was also subjected to a code peer review by fellow students at Code Institute, which returned no known responsiveness issues, aside from the landscape issue. 
 
 [Back to top](<#contents>)
 
@@ -312,32 +317,30 @@ and multiple devices
 * Game Screen
 
     * Verified that clicking the Home Button icon on the top-bar brought the user back to the home screen
-    * Verified that clicking the Sound Button icon on the top-bar brought the user to mute/unmute as desired
+    * Verified that clicking the Sound Button icon on the top-bar allowed the user to mute/unmute as desired
     * Verified that all touch controls work in their indicated direction
     * Verified that the pause button toggles from play to pause to play as many times as the user presses it
-    * Verified that the game speed increased as the game progressed 
-    * Verified that the scores kept count of the number of apple eaten
+    * Verified that the game speed increased as the game progresses
+    * Verified that the scores keep count of the number of apple eaten
     * Verified that all sounds work if the sound is toggled on; touch controls, arrows and ingestion of apple
-    * Verified that upon collision of walls or ingestion of apple, the game ends and the game over screen bec omes visible
+    * Verified that upon collision of walls or ingestion of apple, the game ends and the game over screen becomes visible
 
 * Game Over Screen
 
-    * Verified that clicking close button on the game over screen closed the modal 
-    * Verified that clicking the Home Button icon on the top-bar (left) brought the user back to the Home screen where the play button worked as predicted to initialise a new game 
+    * Verified that clicking close button on the Game Over screen closes the modal 
+    * Verified that clicking the Home Button icon on the top-bar (left) brings the user back to the Home screen where the play button works as predicted to initialise a new game 
     * Verified that toggling the sound button icon on the top-bar (right) toggles the sound mute/unmute as desired
-    * Verified that all sounds work if the sound is toggled on; background music and button clicks.
+    * Verified that all sounds work if the sound is toggled on; background music and button clicks (desktop)
 
 ## Bugs Fixed
 
 ### Right Wall Collision 
 
-There was an unexpected behavior occuring on snake collsion with the right wall, as it looped round and came back through the left wall instead of displaying the game over screen. This was fixed with a simple >= in the logic as opposed to just a >.
+There was an unexpected behavior occuring on snake collsion with the right wall, as it looped round and came back through the left wall instead of displaying the Game Over screen. This was fixed with a simple >= in the logic as opposed to just a >.
 
 ![Verified via](docs/readme-images/right-wall-code-snake.png)
 
 ### The Score displayed in Game Over Screen 
-
-![Verified via](docs/readme-images/.png)
 
 The score was sporadically appearing in the game over screen, this was fixed by adjusting the setInterval function in the javascript. 
 
@@ -349,16 +352,16 @@ undesirably, the apple was occasionally generating within the snake body. This w
 
 ## Unresolved Bugs
 
-### JSHint Validation
-
-JSHint validation returned clean
-
-![JSHint Validation](docs/readme-images/.png)
-
 ### Mobile sound issues
 
 There are sound trigger issues if playing the game on mobile, including most of the touch controls and overlap of apple sounds should apples be eaten in quick succession. This is due to inbuilt OS settings which stop sounds playing by default.
 Additional info can be found [here](https://stackoverflow.com/questions/17889297/sound-does-not-play-in-mobile)
+
+[Back to top](<#contents>)
+
+### Fast touch 
+
+On occasion as the speed progresses, the game freezes, seemingly overloaded with touch gestures. I suspect this could be fixed with experimentation with the intervalTime. 
 
 [Back to top](<#contents>)
 
