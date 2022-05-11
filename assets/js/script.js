@@ -169,7 +169,6 @@ function exitGame() {
   gameScreen.style.display = 'flex';
   gameOverScreen.style.display = 'block';
   modalParagraph.textContent = `You scored: ${score}`;
-  console.log("game over", gameOver);
   return gameOver;
 
 }
@@ -185,7 +184,6 @@ function generateApple() {
     }
   }
   if (isAppleOver) {
-    console.log("Colliding... generating again");
     generateApple();
   }
   squares[appleIndex].classList.add("apple");
@@ -226,7 +224,7 @@ function touchControlsClicked() {
     downSound.play();
     direction = +width;
   }
-  if(this.getAttribute("id") === "pause") {
+  if (this.getAttribute("id") === "pause") {
     const pauseElement = document.getElementById("pause");
     const element = pauseElement.children[0];
     // toggles pause button
@@ -242,7 +240,7 @@ function touchControlsClicked() {
       element.classList.add("fa-solid");
       element.classList.add("fa-pause");
       timerId = setInterval(move, intervalTime);
-    } 
+    }
   }
 }
 
