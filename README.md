@@ -269,10 +269,6 @@ The site was also tested on Performance, Accessibility, Best Practices and SEO v
 
 ![Lighthouse testing for mobile](docs/readme-images/lighthouse-mobile-snake.png)
 
-Initially there was an error in the performance test, which is related to a known chrome bug when dealing with Keyframes and Opacity 0. This has since been fixed. You can find documentation here:
-
-[Chrome bug](https://github.com/GoogleChrome/lighthouse/issues/11603)
-
 ## Accessibility Testing
 
 The website passed it's color contrast for accessibility purposes test via A11y color contrast accessibility validator 
