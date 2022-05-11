@@ -106,7 +106,8 @@ Screens 2 and 3 have a top bar which offers a route back to the home page, and a
 
 The final color theme of neon green, black and white was chosen due to it's dual personality of both past and future. Neon, to evoke the 90's, against monochrome black and white to maximize contrast and imply speed, simplicity and modernity. The dominating black background allows the neon to glow against it, and pop's both the snakeskin and apple features. 
 
-![Site colour scheme](docs/readme-images/color-palete.png)
+![Site colour scheme](docs/readme-images/color-palette-snake.png)
+
 
 ### Typography
 
@@ -125,10 +126,10 @@ It's intuitively designed so the user can navigate it with ease, with prominent 
 * The Home Screen is visible on site load. It's designed to be easily understandable, and to allow user to immediately start the game play.
 * The site title sits on top of a snake gif, so the user has no doubt as to what the site is.
 * In the middle of the screen, the unmistakable play button invites the user to begin immediately.
-* Below this, the how to play section informs the user  of the simple game rules.
+* Below this, the how to play section informs the user of the simple game rules.
 
-![Mobile Home Screen](docs/readme-images/mobile-home-screen.png)
-![Home Screen image](docs/readme-images/home-screen.png)
+![Mobile Home Screen](docs/readme-images/mobile-home-screen-snake.png)
+![Home Screen image](docs/readme-images/home-screen-desktop-snake.png)
 
 ## Top bar
 
@@ -141,15 +142,14 @@ It's intuitively designed so the user can navigate it with ease, with prominent 
 
 <details><summary>Mobile top bar images</summary>
 
-![info-bar image of all screens other than questions screen](docs/readme-images/info-bar-image-1.png)
-![info-bar of questions screen while playing quiz](docs/readme-images/info-bar-image-2.png)
-![info-bar of questions screen while playing quiz image 2](docs/readme-images/info-bar-image-3.png)
+![top-bar image of all screens other than initial home screen](docs/readme-images/mobile-top-bar.png)
+
 
 </details>
+
 <details><summary>Desktop top bar images</summary>
 
-![Mobile info-bar image of all screens other than questions](docs/readme-images/mobile-info-bar-2.jpeg)
-![Mobile info-bar of questions screen while playing quiz](docs/readme-images/mobile-info-bar.jpeg)
+![top-bar desktop](docs/readme-images/desktop-top-bar.png)
 
 </details>
 
@@ -162,8 +162,17 @@ It's intuitively designed so the user can navigate it with ease, with prominent 
 * The score section, atop the game, indicates how many apples have been swallowed and increments by 1 to keep things simple. 
 * The user can return home at any point during a live game, and from here we have the comforting familiarity of the home page and the play button can generate a new game if desired. 
 
-<details><summary>Mobile Game Screen</summary></details>
-<details><summary>Desktop Game Screen</summary></details>
+<details><summary>Mobile Game Screen</summary>
+
+![Mobile Game Screen image](docs/readme-images/game-screen-mobile-snake.png)
+
+</details>
+
+<details><summary>Desktop Game Screen</summary>
+
+![Mobile Game Screen image](docs/readme-images/game-over-screen-desktop-snake.png)
+
+</details>
 
 ## Game Over Screen
 
@@ -171,8 +180,17 @@ It's intuitively designed so the user can navigate it with ease, with prominent 
 * It informs the user of game over and then indicates their score
 * The close icon, top right, closes the game over screen and allows the user to navigate back home for a repeat performance.
 
-![Mobile Game Over Screen image](docs/readme-images/mobile-gameover-screen.png)
-![Game Over Screen image](docs/readme-images/gameover-screen.png)
+<details><summary>Mobile Game Over Screen</summary>
+
+![Mobile Game Over Screen image](docs/readme-images/game-over-screen-mobile-snake.png)
+
+</details>
+
+<details><summary>Desktop Game Over Screen</summary>
+
+![Game Over Screen image](docs/readme-images/game-over-screen-desktop-snake.png.)
+
+</details>
 
 ## Sound
 
@@ -181,7 +199,11 @@ It's intuitively designed so the user can navigate it with ease, with prominent 
 * On snake direction change there are modern tonal sounds, which traverse the musical scale in the same direction as the snake moves
 * On ingestion of an apple there's a comedy bite sound to amplify the satisfaction of a feed!
 
-# Future Features  
+# Future Features 
+
+## Hammer JS swipe touch controls 
+
+* Regrettably the tight deadline denied me the joy of implementing touch screen gestures with Hammer JS, however this would be the first scheduled upgrade!
 
 ## Difficulty levels
 
@@ -225,7 +247,7 @@ It's intuitively designed so the user can navigate it with ease, with prominent 
 This game has been tested via W3C HTML validator and W3C CSS validator. There were a few minor errors that came up for the HTML pages which were immediately corrected and documented down below in [Bugs Fixed](<#bugs-fixed>).
 
 ![HTML W3C validator](docs/readme-images/html-validator.png)
-![CSS W3C Validator](docs/readme-images/css-validator-pass.png)
+![CSS W3C Validator](docs/readme-images/css-validator.png)
 
 ## JSHint
 
@@ -241,11 +263,15 @@ JSHint came up with no errors and multiple warnings which are explained below in
 
 ## Lighthouse Testing
 
-The site was also tested on Performance, Accessibility, Best Practices and SEO via Lighthouse testing in Chrome DevTools. Both mobile and desktop performaces were tested. 
+The site was also tested on Performance, Accessibility, Best Practices and SEO via Lighthouse testing in Chrome DevTools. Both mobile and desktop performaces were tested.
 
-![Lighthouse testing for desktop](docs/readme-images/lighthouse-testing.png)
+![Lighthouse testing for desktop](docs/readme-images/lighthouse-desktop-snake.png)
 
-![Lighthouse testing for mobile](docs/readme-images/lighthouse-testing2.png)
+![Lighthouse testing for mobile](docs/readme-images/lighthouse-mobile-snake.png)
+
+Initially there was an error in the performance test, which is related to a chrome bug when dealing with Keyframes and Opacity 0 when testing in some instances. This has since been fixed. You can find documentation here:
+
+[Chrome bug](https://github.com/GoogleChrome/lighthouse/issues/11603)
 
 ## Accessibility Testing
 
