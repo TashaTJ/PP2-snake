@@ -378,7 +378,22 @@ h2 {
     img {
         pointer-events: none;
         border: 0;
+        width: 32rem;
+        height: 32rem;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+   
+    h1 {
+        font-size: 12rem;
+    }
+    
+    img {
+        pointer-events: none;
+        border: 0;
         width: 35rem;
         height: 35rem;
     }
+
 }
