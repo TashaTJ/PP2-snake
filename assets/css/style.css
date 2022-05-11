@@ -345,8 +345,8 @@ h2 {
     img {
         pointer-events: none;
         border: 0;
-        width: 25rem;
-        height: 25rem;
+        width: 30rem;
+        height: 30rem;
     }
 
     .modal-header h2 {
@@ -372,13 +372,13 @@ h2 {
     }
 
     h1 {
-        font-size: 8rem;
+        font-size: 10rem;
     }
 
     img {
         pointer-events: none;
         border: 0;
-        width: 25rem;
-        height: 25rem;
+        width: 35rem;
+        height: 35rem;
     }
 }
