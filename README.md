@@ -88,6 +88,8 @@ The **user** is any person who has read the Harry Potter book series (1-7) and w
 
 </details>
 
+I used wireframes to initially plan the project. As the build progressed, I made some alterations based on challenges I faced, particularly for mobile devices and the need for the touch controls to be accessible on mobile. 
+
 ## Site Structure
 
 The game lives within a one page site with 3 different 'screens', that the user navigates through to engage with the game. 
