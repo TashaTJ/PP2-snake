@@ -329,41 +329,32 @@ and multiple devices
 
 There was an unexpected behavior occuring on snake collsion with the right wall, as it looped round and came back through the left wall instead of displaying the game over screen. This was fixed with a simple >= in the logic as opposed to just a >.
 
-![right wall collision error](docs/readme-images/.png)
+![Verified via](docs/readme-images/right-wall-code-snake.png)
 
 ### The Score displayed in Game Over Screen 
 
+![Verified via](docs/readme-images/.png)
+
 The score was sporadically appearing in the game over screen, this was fixed by adjusting the setInterval function in the javascript. 
-
-![Verified via ](docs/readme-images/.png)
-
-### Apple sound after game over 
-
-The apple sound could be heard after game over, this was corrected by creating an exitGame function in the javascript and calling it within the move function
-
-![Verified via ](docs/readme-images/.png)
 
 ### Apple genereated within snake body 
 
 undesirably, the apple was occasionally generating within the snake body. This was a logical error and fixed within the javascript with a for loop that disabled such behavior
 
-![Verified via ](docs/readme-images/.png)
+![Verified via](docs/readme-images/apple-code.png)
 
 ## Unresolved Bugs
 
 ### JSHint Validation
 
-There are two warnings below in respect of declaring a function inside of a loop. It was assured that this wouldn't be an issue as the code is correct and will cause no problems.
+JSHint validation returned clean
 
-![JSHint functions declared in a loop warning](docs/readme-images/.png)
-![JSHint functions declared in a loop warning 2](docs/readme-images/.png)
+![JSHint Validation](docs/readme-images/.png)
 
 ### Mobile sound issues
 
-There are sound trigger issues if playing the game on mobile, including most of the touch controls and overlap of apple sounds should apples be eaten in quick succession. These are most likely due to browsers preventing audio auto play. 
+There are sound trigger issues if playing the game on mobile, including most of the touch controls and overlap of apple sounds should apples be eaten in quick succession. This is due to inbuilt OS settings which stop sounds playing by default.
 Additional info can be found [here](https://stackoverflow.com/questions/17889297/sound-does-not-play-in-mobile)
-
-![another photo here](docs/readme-images/)
 
 [Back to top](<#contents>)
 
@@ -376,7 +367,11 @@ The website was deployed to GitHub pages via the following methods:
 3. Under source, select branch ‘master’ and then click ‘save’
 4. page will no automatically refresh and show a detailed ribbon display to indicate deployment 
 
-![Deployment Process Image](assets/readme-images/deployment-image.jpg)
+<details><summary>Deployment Process</summary>
+
+![Deploy](docs/readme-images/deploy-snake.jpg)
+
+</details>
 
 ## To fork the repository on GitHub
 
@@ -385,7 +380,11 @@ To make a copy or ‘fork’ the repository -
 1. Log into GitHub and locate repository 
 2. On the right hand side of the page select the ‘fork’ option to create and copy of the original
 
-![Forking Process Image](assets/readme-images/fork-image.jpg)
+<details><summary>Forking Process</summary>
+
+![Forking Process Image](docs/readme-images/fork-snake.jpg)
+
+</details>
 
 ## To clone the repository on GitHub
 
@@ -396,8 +395,11 @@ To make a copy or ‘fork’ the repository -
 5. Type ‘git clone’ and then paste the URL copied from GitHub
 6. press enter and the local clone will be created 
 
+<details><summary>Cloning Process</summary>
 
-![Clonging Process image](assets/readme-images/clone-image.jpg)
+![Clonging Process image](docs/readme-images/clone-snake.jpg)
+
+</details>
 
 [Back to top](<#contents>)
 
