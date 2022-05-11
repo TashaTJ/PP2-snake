@@ -1,6 +1,6 @@
-# **Snake - Project Portfolio 2 - Javascript**
+# **Snake - Portfolio Project 2 - Javascript**
 
-Snake is an interactive online homage to the infamous 1998 Nokia mobile game. Snake has roots in the 1976 arcade classic, Blockade, and has retianed it's legendary status largely due to it's simplistic design uncomplicated rule system. 
+Snake is an interactive online homage to the infamous 1998 Nokia mobile game. Snake has roots in the 1976 arcade classic, Blockade, and has retianed it's legendary status largely due to it's simplistic design anduncomplicated rule system. 
 
 
 You can view the live site here - <a href="https://tashatj.github.io/snake-game/" target="_blank"> Snake </a>
