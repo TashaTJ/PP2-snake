@@ -61,27 +61,12 @@ h1 {
     margin-top: 1rem;
 }
 
-/*.giphy-embed {
-    pointer-events: none;
-    border: 0;
-    width: 15rem;
-    height: 15rem;
-}*/
-
-/*video {
-    pointer-events: none;
-    border: 0;
-    width: 15rem;
-    height: 15rem;
-}*/
-
 img {
     pointer-events: none;
     border: 0;
     width: 15rem;
     height: 15rem;
 }
-
 
 i {
     margin-bottom: 2rem;
@@ -242,7 +227,7 @@ h2 {
     width: 4rem;
     height: 4rem;
     font-size: 3rem;
-    /*touch-action: manipulation;*/
+    touch-action: manipulation;
 }
 
 .btnControls i {
