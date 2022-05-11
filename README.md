@@ -255,11 +255,7 @@ This game has been tested via W3C HTML validator and W3C CSS validator. There we
 
 The Javascript file was validated in JSHint. Initially there were a couple of undefined varibles which have since been defined and JSHint has come up clean. 
 
-![JSHint validation for script.js](docs/readme-images/jshint-scriptpage.png)
-![JSHint validation for questions.js](docs/readme-images/jshint-questions-jspage.png)
-![JSHint validation for quiz-audio.js](docs/readme-images/jshint-audio-jspage.png)
-![JSHint validation for timer.js](docs/readme-images/jshint-timer-jspage.png)
-![JSHint validation for highscores.js](docs/readme-images/jshint-highscores-jspage.png)
+![JSHint validation for script.js](docs/readme-images/jshint-snake.png)
 
 ## Lighthouse Testing
 
