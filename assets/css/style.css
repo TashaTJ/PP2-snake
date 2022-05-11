@@ -92,7 +92,7 @@ i {
     margin: 0 10px;
 }
 
-/* @keyframes fadeIn {
+@keyframes fadeIn {
     0% {
         opacity: 0;
     }
@@ -100,7 +100,7 @@ i {
     100% {
         opacity: 1;
     }
-} */
+} 
 
 .btn {
     padding: 2rem 8rem;
@@ -342,10 +342,12 @@ h2 {
         padding: 2rem 10rem;
     }
 
-    /*.giphy-embed {
+    img {
+        pointer-events: none;
+        border: 0;
         width: 25rem;
         height: 25rem;
-    }*/
+    }
 
     .modal-header h2 {
         font-size: 4rem;
@@ -373,8 +375,10 @@ h2 {
         font-size: 8rem;
     }
 
-    /*.giphy-embed {
-        width: 30rem;
-        height: 30rem;
-    }*/
+    img {
+        pointer-events: none;
+        border: 0;
+        width: 25rem;
+        height: 25rem;
+    }
 }
