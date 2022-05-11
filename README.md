@@ -406,6 +406,7 @@ To make a copy or ‘fork’ the repository -
 
 * [Modal creation tutorial](https://www.w3schools.com/howto/howto_css_modals.asp)
 * [Modal creation tutorial](https://youtu.be/XH5OW46yO8I)
+* [Touch Controls inspiration](https://github.com/gibbo101/snake-game)
 * [Tutorial about coding snake](https://youtu.be/7Azlj0f9vas)
 * [another tutorial about coding snake](https://youtu.be/7Azlj0f9vas)
 * [Tutorial for learning about setInterval and setTimeout](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous)
