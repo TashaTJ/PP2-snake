@@ -413,6 +413,7 @@ To make a copy or ‘fork’ the repository -
 * [Dom manipulation refresher](https://youtu.be/y17RuWkWdn8)
 * [Javascript game refresher](https://youtu.be/UUFPEgRKwf4)
 * [Very informative coding youtube channel](https://www.youtube.com/channel/UCuwL6KfTU7VoDZYZuE1WMfA)
+* [Rhiannon McNulty's sensational readme.md](https://github.com/rhiannonmcn/Harry-Potter-Quiz)
 
 [Back to top](<#contents>)
 
