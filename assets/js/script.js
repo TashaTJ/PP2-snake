@@ -50,6 +50,7 @@ closeBtn.addEventListener('click', () => {
   displayHomeScreen();
 });
 
+// adds event listener to toggle sound button
 toggleSound.addEventListener('click', (e) => {
   if (biteSound.muted === false && leftSound.muted === false && rightSound.muted === false && downSound.muted === false && upSound.muted === false && gameOverTone.muted === false) {
     e.target.style.color = 'greenyellow';
@@ -59,7 +60,7 @@ toggleSound.addEventListener('click', (e) => {
     rightSound.muted = true;
     downSound.muted = true;
     upSound.muted = true;
-    gameOverTone = true;
+    gameOverTone.muted = true;
   } else {
     e.target.style.color = 'white';
     e.target.className = 'fas fa-volume-up';
@@ -68,7 +69,7 @@ toggleSound.addEventListener('click', (e) => {
     rightSound.muted = false;
     downSound.muted = false;
     upSound.muted = false;
-    gameOverTone = false;
+    gameOverTone.muted = false;
   }
 });
 
@@ -103,6 +104,13 @@ createGrid();
 
 currentSnake.forEach((index) => squares[index].classList.add("snake"));
 
+
+/* Set ups game 
+* initialises current snake
+* initialises direction right 
+* starts snake moving timer
+* snake moves with 1 second gap
+*/
 function startGame() {
   //remove the snake
   currentSnake.forEach((index) => squares[index].classList.remove("snake"));
@@ -121,6 +129,13 @@ function startGame() {
   timerId = setInterval(move, intervalTime);
 }
 
+/* deals with snake collisions (apples and walls)
+* generates apple 
+* plays game over tone
+* exits game and clears the timer
+* increments speed
+*increments score
+*/
 function move() {
   if (
     (currentSnake[0] + width >= width * width && direction === width) || //if snake has hit bottom
@@ -165,6 +180,7 @@ function move() {
   squares[currentSnake[0]].classList.add("snake");
 }
 
+// Clear game screen and display the score to user 
 function exitGame() {
   gameScreen.style.display = 'flex';
   gameOverScreen.style.display = 'block';
@@ -173,11 +189,12 @@ function exitGame() {
 
 }
 
+// generates random position for apple, checks if apple is in snake body and if so generates a new position until apple is not on snake body
 function generateApple() {
   do {
     appleIndex = Math.floor(Math.random() * squares.length);
   } while (squares[appleIndex].classList.contains("snake"));
-  isAppleOver = false;
+  let isAppleOver = false;
   for (let i = 0; i < currentSnake.length; i++) {
     if (currentSnake[i] == appleIndex) {
       isAppleOver = true;
@@ -190,6 +207,7 @@ function generateApple() {
 }
 generateApple();
 
+// set keyboard arrows direction, and plays sounds 
 function control(e) {
   if (e.keyCode === 39) {
     direction = 1;
@@ -206,7 +224,7 @@ function control(e) {
   }
 }
 
-// touch controls 
+// sets touch control directions and plays sound, and toggles the sound on and off 
 function touchControlsClicked() {
   if (this.getAttribute("id") === "btn-left") {
     direction = -1;
@@ -246,6 +264,7 @@ function touchControlsClicked() {
 
 document.addEventListener("keyup", control);
 
+// prevents any other keys from being meaningful 
 window.addEventListener(
   "keydown",
   function (e) {
@@ -260,10 +279,12 @@ window.addEventListener(
   false
 );
 
+// closes the game over screen 
 function closeModal(modal) {
   modal.style.display = 'none';
 }
 
+// displays initial home screen
 function displayHomeScreen() {
   gameScreen.style.display = 'none';
   homeScreen.style.display = 'flex';
