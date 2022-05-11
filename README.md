@@ -169,7 +169,7 @@ It's intuitively designed so the user can navigate it with ease, with prominent 
 
 <details><summary>Desktop Game Screen</summary>
 
-![Mobile Game Screen image](docs/readme-images/game-over-screen-desktop-snake.png)
+![Mobile Game Screen image](docs/readme-images/game-screen-desktop-snake.png)
 
 </details>
 
@@ -187,30 +187,32 @@ It's intuitively designed so the user can navigate it with ease, with prominent 
 
 <details><summary>Desktop Game Over Screen</summary>
 
-![Game Over Screen image](docs/readme-images/game-over-screen-desktop-snake.png.)
+![Game Over Screen image](docs/readme-images/game-over-screen-desktop-snake.png)
 
 </details>
 
 ## Sound
 
-* the user has the option to mute/unmute sound via the sound button on the top bar at all times during the game 
+* The user has the option to mute/unmute sound via the sound button on the top bar at all times during the game 
 * The sound gives the user additional feedback as they play for a satifiying UX
 * On snake direction change there are modern tonal sounds, which traverse the musical scale in the same direction as the snake moves
 * On ingestion of an apple there's a comedy bite sound to amplify the satisfaction of a feed!
+* On Game Over there's a arcade-esque musical flourish to let the user know the game is over
+
 
 # Future Features 
 
-## Hammer JS swipe touch controls 
+## Hammer JS Touch Controls 
 
 * Regrettably the tight deadline denied me the joy of implementing touch screen gestures with Hammer JS, however this would be the first scheduled upgrade!
 
 ## Difficulty levels
 
-* Several different levels - including speed increase, multiple snakes and extra walls - could be intorduced. They would be accessed via a settings button, and toggled with radio buttons as indicated in the wireframes
+* Several different levels - including speed increase, multiple snakes and extra walls - could be intorduced. They would be accessed via a settings button, and toggled with radio buttons. (indicated in the wireframes)
 
 ## Interchangeable Snake Skins
 
-* Within the settings screen, the user could also toggel through a variety of colourful snake skin desigs, for increased enjoyment of the game
+* Within the settings screen, the user could also toggel through a variety of colourful snake skin desigs, for increased enjoyment of the game. (indicated in the wireframes)
 
 ## High Scores 
 
@@ -231,8 +233,8 @@ It's intuitively designed so the user can navigate it with ease, with prominent 
 * [Logic Pro X](https://www.apple.com/uk/logic-pro/) - to create direction sounds
 * [Balsamiq](https://balsamiq.com/) - for wireframe creation
 * [Optimizilla](https://imagecompressor.com/) - Used to compress images
-* [Giphy](https://giphy.com/) - to create
 * [Final Cut Pro](https://www.apple.com/uk/final-cut-pro/) - to manipualte snake animation for gif
+* [Pro Create](https://procreate.art/) - to manipualte images for readme.md
 * Google Chrome DevTools - Used to debug and test responsiveness of the site
 * Gitpod - Used to develop the website
 * GitBash - Terminal used to push changes to the GitHub repository
@@ -251,9 +253,7 @@ This game has been tested via W3C HTML validator and W3C CSS validator. There we
 
 ## JSHint
 
-The Javascript file was validated in JSHint. Initially there were a couple of undefined varibles which have since been defined
-
-JSHint came up with no errors and multiple warnings which are explained below in [Unresolved Bugs](<#unresolved-bugs>).
+The Javascript file was validated in JSHint. Initially there were a couple of undefined varibles which have since been defined and JSHint has come up clean. 
 
 ![JSHint validation for script.js](docs/readme-images/jshint-scriptpage.png)
 ![JSHint validation for questions.js](docs/readme-images/jshint-questions-jspage.png)
@@ -269,7 +269,7 @@ The site was also tested on Performance, Accessibility, Best Practices and SEO v
 
 ![Lighthouse testing for mobile](docs/readme-images/lighthouse-mobile-snake.png)
 
-Initially there was an error in the performance test, which is related to a chrome bug when dealing with Keyframes and Opacity 0 when testing in some instances. This has since been fixed. You can find documentation here:
+Initially there was an error in the performance test, which is related to a known chrome bug when dealing with Keyframes and Opacity 0. This has since been fixed. You can find documentation here:
 
 [Chrome bug](https://github.com/GoogleChrome/lighthouse/issues/11603)
 
@@ -277,7 +277,11 @@ Initially there was an error in the performance test, which is related to a chro
 
 The website passed it's color contrast for accessibility purposes test via A11y color contrast accessibility validator 
 
-![A11y color contrast accessibility](docs/readme-images/color-contrast-accessibility-validator.png)
+<details><summary>A11y Color contrast test</summary>
+
+![A11y color contrast accessibility](docs/readme-images/color-contrast-snake.png)
+
+</details>
 
 ## Responsive Testing
 
