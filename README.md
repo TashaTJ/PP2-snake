@@ -5,7 +5,7 @@ Snake is an interactive online homage to the infamous 1998 Nokia mobile game. Sn
 
 You can view the live site here - <a href="" target="_blank"> Snake </a>
 
-![Snake Am I Responsive image](docs/readme-images/)
+![Snake Am I Responsive image](docs/readme-images/multi-device-mockup-snake.png)
 
 # Contents
 
@@ -72,37 +72,19 @@ The **user** is any person who has read the Harry Potter book series (1-7) and w
 
 <details> <summary> phone wireframes</summary>
 
-![Homepage](docs/wireframes/)
-
-![instructions](docs/wireframes/)
-
-![settings](docs/wireframes/)
-
-![game](docs/wireframes/)
+![mobile](docs/wireframes/snake-mobile-wireframes.jpg)
 
 </details>
 
 <details> <summary> tablet wireframes</summary>
 
-![Homepage](docs/wireframes/)
-
-![instructions](docs/wireframes/)
-
-![settings](docs/wireframes/)
-
-![game](docs/wireframes/)
+![tablet](docs/wireframes/snake-tablet-wireframes.jpg)
 
 </details>
 
 <details> <summary> desktop wireframes</summary>
 
-![Homepage](docs/wireframes/)
-
-![instructions](docs/wireframes/)
-
-![settings](docs/wireframes/)
-
-![game](docs/wireframes/)
+![desktop](docs/wireframes/snake-desktop-wireframes.jpg)
 
 </details>
 
